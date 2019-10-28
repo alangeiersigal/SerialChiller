@@ -1,0 +1,121 @@
+* {
+Box-sizing: border-box;
+}
+body{
+  margin: 0;
+	padding: 0;
+}
+.contengotodo {
+  width: 100%;
+  background-color: #071e3d;
+  height: 2000px;
+}
+nav {
+  display: flex;
+  background-color: #278ea5;
+  position: relative;
+  flex: wrap;
+  opacity: 0.8;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  flex: wrap;
+  width: 100%;
+  position: fixed;
+  color: #278ea5;
+  position: relative;
+}
+nav ul li {
+  list-style-type: none;
+  color: white;
+  flex-wrap: wrap;
+width: 10%;
+}
+nav ul li a {
+  text-decoration: none;
+  flex-wrap:wrap;
+  color: white;
+  position: absolute;
+}
+nav ul li a:hover {
+  color: #071E3D;
+}
+.search {
+  margin-left: 40%;
+}
+.LOGIN {
+  margin-left: 3%;
+
+}
+.REGISTER {
+  margin-left: 0%;
+  justify-content:
+  right; 2%
+}
+
+.estrenos {
+  height: 500px;
+  position: relative;
+background-color:#071e3d ;
+}
+.estrenos img {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+}
+/* aca empiezan los carruseles*/
+.populares h1 {
+  color: white;
+  background-color: #071e3d;
+}
+.populares {
+  background-color:#278ea5;
+}
+.imagenespopu{
+display: flex;
+justify-content: space-around;
+}
+.imagenespopu img {
+  flex-wrap: wrap;
+  width: 15%;
+  height: 300px;
+}
+/*termina carrusel popular */
+/*empeiza carrusel recomendadi*/
+.recomendadas h1 {
+  color: white;
+  background-color: #071e3d;
+}
+.recomendadas {
+  background-color:#278ea5;
+}
+.imgrecomendadas{
+display: flex;
+justify-content: space-around;
+}
+.imgrecomendadas img {
+  flex-wrap: wrap;
+  width: 15%;
+  height: 300px;
+}
+/*termina carrusel recomendadi*/
+/* empieza carrusel en emision */
+
+.emision h1 {
+  color: white;
+  background-color: #071e3d;
+}
+.emision {
+  background-color:#278ea5;
+}
+.imgemision{
+display: flex;
+justify-content: space-around;
+}
+.imgemision img {
+  flex-wrap: wrap;
+  width: 15%;
+  height: 300px;
+}
+/* Termina carrusel en emision */
