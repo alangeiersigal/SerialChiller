@@ -10,6 +10,7 @@ body{
   background-color: #071e3d;
   height: 2000px;
 }
+/*cosas para el nav */
 nav {
   display: flex;
   background-color: #278ea5;
@@ -53,6 +54,8 @@ nav ul li a:hover {
   justify-content:
   right; 2%
 }
+/*termina nav*/
+/* empieza carrusel estrenos*/
 
 .estrenos {
   height: 500px;
@@ -70,7 +73,7 @@ background-color:#071e3d ;
   background-color: #071e3d;
 }
 .populares {
-  background-color:#278ea5;
+  background-color:rgba(0, 0, 179, 0.2);
 }
 .imagenespopu{
 display: flex;
@@ -88,7 +91,7 @@ justify-content: space-around;
   background-color: #071e3d;
 }
 .recomendadas {
-  background-color:#278ea5;
+  background-color:rgba(0, 0, 179, 0.2);
 }
 .imgrecomendadas{
 display: flex;
@@ -107,7 +110,7 @@ justify-content: space-around;
   background-color: #071e3d;
 }
 .emision {
-  background-color:#278ea5;
+  background-color: rgba(0, 0, 179, 0.2);
 }
 .imgemision{
 display: flex;
