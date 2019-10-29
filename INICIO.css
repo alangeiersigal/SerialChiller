@@ -73,7 +73,7 @@ background-color:#071e3d ;
   background-color: #071e3d;
 }
 .populares {
-  background-color:rgba(0, 0, 179, 0.2);
+  background-color:rgba(0, 0, 179, 0.3);
 }
 .imagenespopu{
 display: flex;
@@ -91,7 +91,7 @@ justify-content: space-around;
   background-color: #071e3d;
 }
 .recomendadas {
-  background-color:rgba(0, 0, 179, 0.2);
+  background-color:rgba(0, 0, 179, 0.3);
 }
 .imgrecomendadas{
 display: flex;
@@ -110,7 +110,7 @@ justify-content: space-around;
   background-color: #071e3d;
 }
 .emision {
-  background-color: rgba(0, 0, 179, 0.2);
+  background-color: rgba(0, 0, 179, 0.3);
 }
 .imgemision{
 display: flex;
