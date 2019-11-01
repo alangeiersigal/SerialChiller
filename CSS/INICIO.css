@@ -20,9 +20,9 @@ nav {
   opacity: 0.8;
   width: 100%;
   padding-top: 0.5%;
-
 }
 nav ul {
+  margin-top: 15px;
   display: flex;
   flex: wrap;
   width: 100%;
@@ -53,9 +53,7 @@ nav ul li a:hover {
 }
 .lupa {
   position: absolute;
-  width: 20%;
-  left: 90%;
-
+  right: 5px;
 }
 .LOGIN {
   margin-left: 4%;
