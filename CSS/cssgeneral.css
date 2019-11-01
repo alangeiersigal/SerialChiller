@@ -1,15 +1,15 @@
 * {
-Box-sizing: border-box;
-font-family: 'Titillium Web', sans-serif;
+  Box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
 }
 body{
   margin: 0;
-	padding: 0;
+  padding: 0;
 }
 .contengotodo {
   width: 100%;
   background-color: #414141;
-  height: 1830px;
+
 }
 /*cosas para el nav */
 nav {
@@ -19,8 +19,10 @@ nav {
   flex: wrap;
   opacity: 0.8;
   width: 100%;
+  padding-top: 0.5%;
 }
 nav ul {
+  margin-top: 15px;
   display: flex;
   flex: wrap;
   width: 100%;
@@ -32,7 +34,7 @@ nav ul li {
   list-style-type: none;
   color: white;
   flex-wrap: wrap;
-width: 10%;
+  width: 10%;
 }
 nav ul li a {
   text-decoration: none;
@@ -42,6 +44,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #071E3D;
+  text-decoration: none;
 }
 .search {
   margin-left: 30%;
@@ -50,18 +53,16 @@ nav ul li a:hover {
 }
 .lupa {
   position: absolute;
-  right: 355px;
-
+  right: 5px;
 }
 .LOGIN {
-  margin-left: 6%;
-  margin-right:
-
+  margin-left: 4%;
+  margin-right: -2%;
 }
 .REGISTER {
   margin-left: 0%;
   justify-content:
-  right; 2%
+  right: 2%;
 }
 .FAQ {
   margin-left: 3%;
@@ -69,6 +70,160 @@ nav ul li a:hover {
 .ABOUTUS {
   margin-left: -1%;
 }
+/*termina nav*/
+/* empieza carrusel estrenos*/
+.uk-pannel {
+
+}
+
+.estrenos {
+
+  position: relative;
+  background-color:#071e3d;
+}
+/* aca empiezan los carruseles*/
+.uk-panel img {
+
+  width: 60%;
+  color: rgba(255, 0, 0, 1);
+  box-shadow: 0 5px 10px rgba(0,0,0,1);
+  position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.populares h1 {
+  color: white;
+  background-color: #071e3d;
+  font-size: 30px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  z-index: 46;
+}
+.populares {
+  background-color:rgba(0, 0, 179, 0.3);
+}
+.imagenespopu{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.imagenespopu img {
+  width: 15%;
+  margin-bottom: 1%;
+  margin-top: -1%;
+
+}
+/*termina carrusel popular */
+/*empeiza carrusel recomendadi*/
+.recomendadas h1 {
+  color: white;
+  background-color: #071e3d;
+  font-size: 30px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.recomendadas {
+  background-color:rgba(0, 0, 179, 0.3);
+}
+.imgrecomendadas{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.imgrecomendadas img {
+  width: 15%;
+  margin-bottom: 1%;
+  margin-top: -1%;
+}
+/*termina carrusel recomendadi*/
+/* empieza carrusel en emision */
+
+.emision h1 {
+  color: white;
+  background-color: #071e3d;
+  font-size: 30px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.emision {
+  background-color: rgba(0, 0, 179, 0.3);
+
+}
+.imgemision{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+}
+/* Termina carrusel en emision */
+/* empiezo footer*/
+.footer-container { /*PONER Z-INDEX PARA Q SE VEA */
+  background-color: #278ea5;
+  width: 100%;
+  top: 100%;
+  border-radius: 5% 5% 0% 0%;
+
+  margin: 0 auto;
+  padding: 32px 12px 12px 12px;
+  display: flex;
+  bottom: 0%;
+  border-radius: 20 20 0 0;
+
+}
+
+.footer-nav {
+  display: flex;
+  flex: 2 1 auto;
+  flex-flow: wrap;
+
+}
+
+.columnaizq {
+  margin-left: 2%;
+  display: flex;
+  flex-flow: column wrap;
+
+}
+.columnaizq p {
+  margin-top: inherit;
+}
+.columnaizq p a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.columnader {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 25%;
+  color: white;
+  font-size: 20px;
+}
+.columnader h5 {
+  margin-bottom: 0;
+  margin-top: inherit;
+}
+.footer-p {
+  margin-bottom: 0;
+}
+
+.follow{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0%;
+  margin-left: 37%;
+
+}
+.follow p {
+  margin: 0;
+  width: 100%;
+}
+footer a:hover {
+  color: blue;
+
+}
+
 /*Termina el nav*/
 
 /*Empieza el footer*/
