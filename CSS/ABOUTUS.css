@@ -1,0 +1,72 @@
+* {
+  Box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.contengotodo {
+  width: 100%;
+  background-color: #071e3d;
+
+}
+/*cosas para el nav */
+nav {
+  display: flex;
+  background-color: #278ea5;
+  position: relative;
+  flex: wrap;
+  opacity: 0.8;
+  width: 100%;
+  padding-top: 0.5%;
+}
+nav ul {
+  margin-top: 15px;
+  display: flex;
+  flex: wrap;
+  width: 100%;
+  position: fixed;
+  color: #278ea5;
+  position: relative;
+}
+nav ul li {
+  list-style-type: none;
+  color: white;
+  flex-wrap: wrap;
+  width: 10%;
+}
+nav ul li a {
+  text-decoration: none;
+  flex-wrap:wrap;
+  color: white;
+  position: absolute;
+}
+nav ul li a:hover {
+  color: #071E3D;
+  text-decoration: none;
+}
+.search {
+  margin-left: 30%;
+  position: relative;
+
+}
+.lupa {
+  position: absolute;
+  right: 5px;
+}
+.LOGIN {
+  margin-left: 4%;
+  margin-right: -2%;
+}
+.REGISTER {
+  margin-left: 0%;
+  justify-content:
+  right: 2%;
+}
+.FAQ {
+  margin-left: 3%;
+}
+.ABOUTUS {
+  margin-left: -1%;
+}
