@@ -82,6 +82,9 @@ bottom: 2%;
   background-color:#071e3d;
 }
 /* aca empiezan los carruseles*/
+.uk-panel {
+  margin-bottom: 6%;
+}
 .uk-panel img {
 
   width: 60%;
@@ -90,6 +93,10 @@ bottom: 2%;
   position: relative;
     left: 50%;
     transform: translateX(-50%);
+
+}
+.uk-panel img:hover{
+  width: 61%;
 }
 
 .populares h1 {
