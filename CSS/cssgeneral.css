@@ -8,13 +8,13 @@ body{
 }
 .contengotodo {
   width: 100%;
-  background-color: #071e3d;
+  background-color: #414141;
 
 }
 /*cosas para el nav */
 nav {
   display: flex;
-  background-color: #278ea5;
+  background-color: #252525;
   position: relative;
   flex: wrap;
   opacity: 0.8;
@@ -73,7 +73,7 @@ nav ul li a:hover {
 /*termina nav*/
 /* empieza carrusel estrenos*/
 .uk-pannel {
-bottom: 2%;
+
 }
 
 .estrenos {
@@ -223,3 +223,65 @@ footer a:hover {
   color: blue;
 
 }
+
+/*Termina el nav*/
+
+/*Empieza el footer*/
+.footer-container { /*PONER Z-INDEX PARA Q SE VEA */
+  background-color: #278ea5;
+  width: 100%;
+  top: 100%;
+  border-radius: 5% 5% 0% 0%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 32px 12px 12px 12px;
+  display: flex;
+}
+
+.footer-nav {
+display: flex;
+flex: 2 1 auto;
+flex-flow: wrap;
+}
+
+.columnaizq {
+  margin-left: 2%;
+  display: flex;
+  flex-flow: column wrap;
+
+}
+.columnaizq p {
+  margin-top: inherit;
+}
+.columnaizq p a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.columnader {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 25%;
+  color: white;
+  font-size: 20px;
+}
+.columnader h5 {
+  margin-bottom: 0;
+  margin-top: inherit;
+}
+.footer-p {
+  margin-bottom: 0;
+}
+
+.follow{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0%;
+  margin-left: 37%;
+
+}
+.follow p {
+  margin: 0;
+  width: 100%;
+}
+/*Termina el footer*/
