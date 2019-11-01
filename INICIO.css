@@ -1,5 +1,6 @@
 * {
 Box-sizing: border-box;
+font-family: 'Titillium Web', sans-serif;
 }
 body{
   margin: 0;
@@ -44,6 +45,14 @@ nav ul li a:hover {
 }
 .search {
   margin-left: 30%;
+  position: relative;
+
+}
+.lupa {
+  position: absolute;
+  width: 20%;
+  left: 90%;
+
 }
 .LOGIN {
   margin-left: 4%;
@@ -84,11 +93,13 @@ background-color:#071e3d ;
 .imagenespopu{
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 }
 .imagenespopu img {
-  flex-wrap: wrap;
   width: 15%;
-  height: 300px;
+  margin-bottom: 1%;
+  margin-top: -1%;
+
 }
 /*termina carrusel popular */
 /*empeiza carrusel recomendadi*/
@@ -102,11 +113,12 @@ justify-content: space-around;
 .imgrecomendadas{
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 }
 .imgrecomendadas img {
-  flex-wrap: wrap;
   width: 15%;
-  height: 300px;
+  margin-bottom: 1%;
+  margin-top: -1%;
 }
 /*termina carrusel recomendadi*/
 /* empieza carrusel en emision */
@@ -121,39 +133,69 @@ justify-content: space-around;
 .imgemision{
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 }
 .imgemision img {
-  flex-wrap: wrap;
   width: 15%;
-  height: 300px;
+  margin-bottom: 1%;
+  margin-top: -1%;
 }
 /* Termina carrusel en emision */
 /* empiezo footer*/
-.encierrofooter { /*PONER Z-INDEX PARA Q SE VEA */
+.footer-container { /*PONER Z-INDEX PARA Q SE VEA */
   background-color: #278ea5;
-  position: relative;
   width: 100%;
-  height: 125px;
   top: 100%;
-  border-radius: 5%;
+  border-radius: 5% 5% 0% 0%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 32px 12px 12px 12px;
+  display: flex;
+}
+
+.footer-nav {
+display: flex;
+flex: 2 1 auto;
+flex-flow: wrap;
 }
 
 .columnaizq {
+  margin-left: 2%;
+  display: flex;
+  flex-flow: column wrap;
+
+}
+.columnaizq p {
+  margin-top: inherit;
+}
+.columnaizq p a {
   color: white;
-  position: absolute;
   font-size: 20px;
-  left: 20%;
+  text-decoration: none;
 }
 .columnader {
-  position: absolute;
-  left: 60%;
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 25%;
   color: white;
   font-size: 20px;
 }
+.columnader h5 {
+  margin-bottom: 0;
+  margin-top: inherit;
+}
+.footer-p {
+  margin-bottom: 0;
+}
+
 .follow{
   color: white;
-  position: absolute;
   font-size: 20px;
-margin-bottom: 0%;
-
+  margin-bottom: 0%;
+  margin-left: 37%;
+  
+}
+.follow p {
+  margin: 0;
+  width: 100%;
 }
