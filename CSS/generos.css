@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #414141;
+}
+
+.genero {
+  color: #af0404;
+  font-size: 30px;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+.pelis {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+
+.imgcontainer {
+  margin-bottom: 20px;
+  width:30%;
+
+}
+.imgcontainer img {
+  box-shadow: 0 5px 10px rgba(0,0,0,1);
+  width: 100%;
+}
+
+.imgcontainer:hover {
+  border:2px solid #af0404;
+  border-radius: 5px;
+}

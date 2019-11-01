@@ -1,0 +1,132 @@
+* {
+Box-sizing: border-box;
+font-family: 'Titillium Web', sans-serif;
+}
+body{
+  margin: 0;
+	padding: 0;
+}
+.contengotodo {
+  width: 100%;
+  background-color: #414141;
+  height: 1830px;
+}
+/*cosas para el nav */
+nav {
+  display: flex;
+  background-color: #252525;
+  position: relative;
+  flex: wrap;
+  opacity: 0.8;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  flex: wrap;
+  width: 100%;
+  position: fixed;
+  color: #278ea5;
+  position: relative;
+}
+nav ul li {
+  list-style-type: none;
+  color: white;
+  flex-wrap: wrap;
+width: 10%;
+}
+nav ul li a {
+  text-decoration: none;
+  flex-wrap:wrap;
+  color: white;
+  position: absolute;
+}
+nav ul li a:hover {
+  color: #071E3D;
+}
+.search {
+  margin-left: 30%;
+  position: relative;
+
+}
+.lupa {
+  position: absolute;
+  right: 355px;
+
+}
+.LOGIN {
+  margin-left: 6%;
+  margin-right:
+
+}
+.REGISTER {
+  margin-left: 0%;
+  justify-content:
+  right; 2%
+}
+.FAQ {
+  margin-left: 3%;
+}
+.ABOUTUS {
+  margin-left: -1%;
+}
+/*Termina el nav*/
+
+/*Empieza el footer*/
+.footer-container { /*PONER Z-INDEX PARA Q SE VEA */
+  background-color: #278ea5;
+  width: 100%;
+  top: 100%;
+  border-radius: 5% 5% 0% 0%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 32px 12px 12px 12px;
+  display: flex;
+}
+
+.footer-nav {
+display: flex;
+flex: 2 1 auto;
+flex-flow: wrap;
+}
+
+.columnaizq {
+  margin-left: 2%;
+  display: flex;
+  flex-flow: column wrap;
+
+}
+.columnaizq p {
+  margin-top: inherit;
+}
+.columnaizq p a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.columnader {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 25%;
+  color: white;
+  font-size: 20px;
+}
+.columnader h5 {
+  margin-bottom: 0;
+  margin-top: inherit;
+}
+.footer-p {
+  margin-bottom: 0;
+}
+
+.follow{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0%;
+  margin-left: 37%;
+
+}
+.follow p {
+  margin: 0;
+  width: 100%;
+}
+/*Termina el footer*/
