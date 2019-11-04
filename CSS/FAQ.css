@@ -1,5 +1,5 @@
 body {
-  background-color: #252525;
+  background-color: grey;
   font-family: 'Titillium Web', sans-serif;
   margin: 0;
   padding: 0;
@@ -10,68 +10,7 @@ body {
   background-color: #071e3d;
   height: 1830px;
 }
-/*cosas para el nav */
-nav {
-  display: flex;
-  background-color: #278ea5;
-  position: relative;
-  flex: wrap;
-  opacity: 0.8;
-  width: 100%;
-}
-nav ul {
-  display: flex;
-  flex: wrap;
-  width: 100%;
-  position: fixed;
-  color: #278ea5;
-  position: relative;
-}
-nav ul li {
-  list-style-type: none;
-  color: white;
-  flex-wrap: wrap;
-width: 10%;
-}
-nav ul li a {
-  text-decoration: none;
-  flex-wrap:wrap;
-  color: white;
-  position: absolute;
-}
-nav ul li a:hover {
-  color: #071E3D;
-}
-.search {
-  margin-left: 30%;
-  width: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 
-}
-.lupa {
-  width: 20%;
-}
-#search{
-  width: 80%;
-}
-.LOGIN {
-  margin-left: 4%;
-  margin-right: -2%;
-}
-.REGISTER {
-  margin-left: 0%;
-  justify-content:
-  right; 2%
-}
-.FAQ {
-  margin-left: 3%;
-}
-.ABOUTUS {
-  margin-left: -1%;
-}
-/*termina nav*/
 
 h1 {
   color: #af0404;
