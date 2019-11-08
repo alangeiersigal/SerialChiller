@@ -2,11 +2,15 @@
 <html lang="en" dir="ltr">
 <head>
   <script src="../JS/INICIO.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+  <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
   <link rel="stylesheet" href="../CSS/INICIO.css">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/busqueda.css">
   <meta charset="utf-8">
   <title>Proyecto integrador</title>
 </head>
@@ -37,9 +41,14 @@
         <li class="NOVEDADES"><a href="#">NOVEDADES</a></li>
         <li class="FAQ"> <a href="#">FAQ</a></li>
         <li class="ABOUTUS"><a href="#">ABOUT US</a></li>
-        <div class="search">
-          <input type="search" id="search" placeholder="Busca tu serie..."><img class="lupa" src="../IMG/search-icon.png" alt="search-icon">
-        </div>
+        <form class="form-search content-search navbar-form" action="" method="post">
+    <div class="input-group">
+        <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" />
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        </span>
+    </div>
+</form>
         <li class="LOGIN"><a href="#">LOGIN</a></li>
         <li class="REGISTER"><a href="#">REGISTER</a></li>
       </ul>
@@ -63,13 +72,9 @@
     </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    <!-- <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a> -->
 
-</div>
-  </div>-->
-    <div class="estrenos">
-      <img src="../IMG/estrenos.jpg" alt="">
-    </div>
+
 
     <div class="populares">
       <h1>Populares en Serial Chiller</h1>
@@ -115,14 +120,14 @@
         <footer class="footer-container">
           <nav class="footer-nav">
             <div class="columnaizq">
-              <p><a href="#">FAQ</a> </p>
+              <p><a href="../FAQ.htm">FAQ</a> </p>
               <p><a href="#">About Us</a> </p>
             </div>
             <div class="follow">
               <p>Follow Us!</p>
-              <a href="#"><img src="../IMG/twitter.png" alt=""></a>
-              <a href="#"><img src="../IMG/instagram.png" alt=""></a>
-              <a href="#"><img src="../IMG/facebook.png" alt=""></a>
+              <a href="https://twitter.com/login?lang=es"><img src="../IMG/twitter.png" alt=""></a>
+              <a href="https://www.instagram.com/?hl=es-la"><img src="../IMG/instagram.png" alt=""></a>
+              <a href="https://es-la.facebook.com/"><img src="../IMG/facebook.png" alt=""></a>
             </div>
             <div class="columnader">
               <h5>CONTACTOS:</h5>

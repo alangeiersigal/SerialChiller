@@ -1,13 +1,11 @@
 * {
   Box-sizing: border-box;
-
-
       font-family: 'Poppins', sans-serif;
-
 }
 body{
   margin: 0;
   padding: 0;
+  background-color: #232931;
 }
 .contengotodo {
   width: 100%;
