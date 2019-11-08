@@ -11,6 +11,8 @@
       <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/cssgeneral.css">
     <link rel="stylesheet" href="../CSS/resultadoDeBusqueda.css">
+    <script src="" charset="utf-8"></script>
+    <script src="../JS/resultadoDeBusqueda.js" charset="utf-8"></script>
     <title></title>
   </head>
   <body>
@@ -50,24 +52,17 @@
     <fieldset class="uk-fieldset">
         <div class="uk-margin">
           <label for="">Que genero quiere buscar?</label>
-            <select class="uk-select">
-                <option>Genero 1</option>
-                <option>Genero 2</option>
-                <option>Genero 3</option>
-                <option>Genero 4</option>
+            <select class="uk-select" id="quieroBuscar">
+
             </select>
         </div>
         <div class="uk-margin">
           <label for="">Que genero desea excluir de su busqueda?</label>
-            <select class="uk-select">
+            <select class="uk-select" id="excluyo">
 
-                <option>Genero 1</option>
-                <option>Genero 2</option>
-                <option>Genero 3</option>
-                <option>Genero 4</option>
                 </select>
 </div>
-<div class="uk-margin">
+<div class="uk-margin" id="orden">
 <label for="">En que orden desea que aparezcan los resultados?</label>
 
                     <select class="uk-select">
@@ -77,16 +72,13 @@
                         <option>Genero 4</option>
                         </select>
                         </div>
-<label for="">En que año se estreno la pelicula?</label>
-                        <div class="uk-margin">
 
-                            <select class="uk-select">
-                                <option>Año 1</option>
-                                <option>Año 2</option>
-                                <option>Año 3</option>
-                                <option>Año 4</option>
-                                </select>
-                                </div>
+    <div class="uk-margin" >
+  <label for="">En que año se estreno?</label>
+
+                <select class="uk-select" id="año">d
+                </select>
+                </div>
 <button type="submit"class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Enviar</button>
     </fieldset>
 </form>
