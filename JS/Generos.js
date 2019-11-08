@@ -1,5 +1,6 @@
 var numeroDePagina = 1;
-
+var idgenre = new URLSearchParams(location.search).get("idgenres")
+var nameGen = new URLSearchParams(location.search).get("nameGenre")
 window.onload = function() {
   fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US")
   .then(function(response) {
@@ -9,13 +10,12 @@ window.onload = function() {
     var nombre = data.genres;
     var cambioElH1 = document.querySelector("h1")
     for (var i = 0; i < nombre.length; i++) {
-    cambioElH1.innerHTML = "Estos son los resultados de " + data.genres.name
-
+    cambioElH1.innerHTML = "Estos son los resultados de " + nameGen;
     }
   })
 
 
-  fetch("https://api.themoviedb.org/3/discover/tv?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false")
+  fetch("https://api.themoviedb.org/3/discover/tv?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=" + idgenre + "&include_null_first_air_dates=false")
   .then(function(response) {
    return response.json()
   })
@@ -34,10 +34,12 @@ window.onload = function() {
 }
 
 function detectarScroll() {
+
   if (numeroDePagina < 500) {
     var finalDePagina = document.querySelector(".cambiapaginas");
 
     if (isScrolledIntoView(finalDePagina)) {
+              console.log(1);
       window.onscroll = function() {}
       numeroDePagina++;
 

@@ -9,7 +9,7 @@ window.addEventListener("load", function() {
    var generos = data.genres;
    var dropdown = document.querySelector(".dropdown-content")
    for (var i = 0; i < generos.length; i++) {
-     dropdown.innerHTML += "<a href=generos.html?idgenres=" + data.genres[i].id + ">" + data.genres[i].name + "</a>";
+     dropdown.innerHTML += "<a href=generos.html?idgenres=" + data.genres[i].id + "&nameGenre=" + data.genres[i].name + ">" + data.genres[i].name + "</a>";
    }
 
   })
