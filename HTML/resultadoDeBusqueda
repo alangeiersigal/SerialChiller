@@ -2,22 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="../JS/jsgeneral.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="../CSS/cssgeneral.css">
-    <link rel="stylesheet" href="../CSS/Generos.css">
+      <link rel="stylesheet" href="../CSS/cssgeneral.css">
     <title></title>
-    <script src="../JS/Generos.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="contengotodo">
       <nav>
         <ul>
           <li class="LOGO"><a href="#">LOGO</a></li>
-          <li class="INICIO"><a href="INICIO.html">INICIO</a></li>
+          <li class="INICIO"><a href="#">INICIO</a></li>
           <div class="dropdown">
-            <a class="drop" href="../HTML/generos.html">SERIES</a>
+            <a class="drop" href="#">SERIES</a>
             <div class="dropdown-content">
-
+              <a href="#">Genero 1</a>
+              <a href="#">Genero 2</a>
+              <a href="#">Genero 3</a>
+              <a href="#">Genero 4</a>
+              <a href="#">Genero 5</a>
+              <a href="#">Genero 6</a>
+              <a href="#">Genero 7</a>
+              <a href="#">Genero 8</a>
+              <a href="#">Genero 9</a>
+              <a href="#">Genero 10</a>
+              <a href="#">Genero 11</a>
+              <a href="#">Genero 12</a>
             </div>
           </div>
           <li class="NOVEDADES"><a href="#">NOVEDADES</a></li>
@@ -28,17 +36,6 @@
           </div>
           <li class="LOGIN"><a href="#">LOGIN</a></li>
           <li class="REGISTER"><a href="#">REGISTER</a></li>
-        </ul>
-      </nav>
-      <h1 class="genero"></h1>
-      <div class="pelis">
 
-
-        </div>
-      </div>
-      <div class="cambiapaginas">
-        asdas
-      </div>
-    </div>
   </body>
 </html>

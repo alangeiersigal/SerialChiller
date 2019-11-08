@@ -5,7 +5,7 @@ window.onload = function (){
       return response.json();
     })
     .then (function (data){
-      // console.log(data);
+       console.log(data);
       var series = data.results;
       var ul = document.querySelector('#populares');
       var li = '';
@@ -62,5 +62,5 @@ window.onload = function (){
   //.catch(function(error) {
     //console.log(error)
 
-  
+
 }
