@@ -7,6 +7,7 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
   <link rel="stylesheet" href="../CSS/INICIO.css">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/busqueda.css">
   <meta charset="utf-8">
   <title>Proyecto integrador</title>
 </head>
@@ -37,10 +38,14 @@
         <li class="NOVEDADES"><a href="#">NOVEDADES</a></li>
         <li class="FAQ"> <a href="#">FAQ</a></li>
         <li class="ABOUTUS"><a href="#">ABOUT US</a></li>
-        <div class="search">
-          <input type="search" id="search" placeholder="Busca tu serie...">
-          <img class="lupa" src="../IMG/search-icon.png" alt="search-icon">
-        </div>
+        <form class="form-search content-search navbar-form" action="" method="post">
+    <div class="input-group">
+        <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" />
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        </span>
+    </div>
+</form>
         <li class="LOGIN"><a href="#">LOGIN</a></li>
         <li class="REGISTER"><a href="#">REGISTER</a></li>
       </ul>
@@ -116,7 +121,7 @@
         <footer class="footer-container">
           <nav class="footer-nav">
             <div class="columnaizq">
-              <p><a href="#">FAQ</a> </p>
+              <p><a href="../FAQ.htm">FAQ</a> </p>
               <p><a href="#">About Us</a> </p>
             </div>
             <div class="follow">

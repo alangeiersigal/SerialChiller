@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <link rel="stylesheet" href="../CSS/busqueda.css">
   <script src="../JS/INICIO.js" charset="utf-8"></script>
   <link rel="stylesheet" href="../CSS/cssgeneral.css">
   <link rel="stylesheet" href="../CSS/ABOUTUS.css">
@@ -34,12 +35,14 @@
         <li class="NOVEDADES"><a href="#">NOVEDADES</a></li>
         <li class="FAQ"> <a href="#">FAQ</a></li>
         <li class="ABOUTUS"><a href="#">ABOUT US</a></li>
-    <div class="input-group">
-        <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" />
-        <span class="input-group-btn">
-            <button type="submit" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
-        </span>
-    </div>
+        <form class="form-search content-search navbar-form" action="" method="post">
+          <div class="input-group">
+              <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" />
+              <span class="input-group-btn">
+                  <button type="submit" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+              </span>
+          </div>
+      </form>
         <li class="LOGIN"><a href="#">LOGIN</a></li>
         <li class="REGISTER"><a href="#">REGISTER</a></li>
       </ul>
