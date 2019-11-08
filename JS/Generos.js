@@ -10,7 +10,7 @@ window.onload = function() {
     var nombre = data.genres;
     var cambioElH1 = document.querySelector("h1")
     for (var i = 0; i < nombre.length; i++) {
-    cambioElH1.innerHTML = "Estos son los resultados de " + nameGen;
+    cambioElH1.innerHTML = "This are the results for " + nameGen;
     }
   })
 
@@ -49,11 +49,12 @@ function detectarScroll() {
     return response.json();
   })
   .then(function(resultados) {
-    var imagenesDePelis = data.results;
+    var imagenesDePelis = resultados.results;
+     var contenedorDeImagenes = document.querySelector(".pelis");
     for (var i = 0; i < imagenesDePelis.length; i++) {
-      contenedorDeImagenes.innerHTML += "<div class='imgcontainer'><a href='generos.html?genreid=" + data.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ data.results[i].poster_path + "'>"
+      contenedorDeImagenes.innerHTML += "<div class='imgcontainer'><a href='generos.html?genreid=" + resultados.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ resultados.results[i].poster_path + "'>"
     }
-      window.onscroll = detectarScroll();
+      window.onscroll = detectarScroll;
   })
 
     }
