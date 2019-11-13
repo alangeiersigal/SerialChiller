@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../CSS/resultadoDeBusqueda.css">
     <script src="" charset="utf-8"></script>
     <script src="../JS/resultadoDeBusqueda.js" charset="utf-8"></script>
+    <script src="../JS/jsgeneral.js" charset="utf-8"></script>
     <title></title>
   </head>
   <body>
@@ -20,66 +21,61 @@
       <nav>
         <ul>
           <li class="LOGO"><a href="#">LOGO</a></li>
-          <li class="INICIO"><a href="#">INICIO</a></li>
+          <li class="INICIO"><a href="INICIO.html">INICIO</a></li>
           <div class="dropdown">
             <a class="drop" href="#">SERIES</a>
             <div class="dropdown-content">
-              <a href="#">Genero 1</a>
-              <a href="#">Genero 2</a>
-              <a href="#">Genero 3</a>
-              <a href="#">Genero 4</a>
-              <a href="#">Genero 5</a>
-              <a href="#">Genero 6</a>
-              <a href="#">Genero 7</a>
-              <a href="#">Genero 8</a>
-              <a href="#">Genero 9</a>
-              <a href="#">Genero 10</a>
-              <a href="#">Genero 11</a>
-              <a href="#">Genero 12</a>
+
             </div>
           </div>
           <li class="NOVEDADES"><a href="#">NOVEDADES</a></li>
           <li class="FAQ"> <a href="#">FAQ</a></li>
           <li class="ABOUTUS"><a href="#">ABOUT US</a></li>
           <div class="search">
-            <input type="search" id="search" placeholder="Busca tu serie..."><img class="lupa" src="../IMG/search-icon.png" alt="search-icon">
+            <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
+        <div class="input-group">
+            <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" name="buscador" />
+            <span class="input-group-btn">
+                <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </span>
+        </div>
+    </form>
           </div>
-          <li class="LOGIN"><a href="#">LOGIN</a></li>
-          <li class="REGISTER"><a href="#">REGISTER</a></li>
         </ul>
       </nav>
-    <form class="" action="index.html" method="post">
+    <form class="" action="busqueda.html" method="get">
     <fieldset class="uk-fieldset">
         <div class="uk-margin">
           <label for="">Que genero quiere buscar?</label>
-            <select class="uk-select" id="quieroBuscar">
+            <select class="uk-select" name="quieroBuscar" id="quieroBuscar">
 
             </select>
         </div>
         <div class="uk-margin">
-          <label for="">Que genero desea excluir de su busqueda?</label>
-            <select class="uk-select" id="excluyo">
+          <label for=""> Que genero desea excluir de su busqueda?</label>
+            <select class="uk-select" name="excluyo" id="excluyo">
 
                 </select>
 </div>
-<div class="uk-margin" id="orden">
+<div class="uk-margin" >
 <label for="">En que orden desea que aparezcan los resultados?</label>
 
-                    <select class="uk-select">
-                        <option>Genero 1</option>
-                        <option>Genero 2</option>
-                        <option>Genero 3</option>
-                        <option>Genero 4</option>
+                    <select class="uk-select" name="orden" id="orden">
+                        <option>popularity.desc</option>
+                        <option>popularity.asc</option>
+                        <option>vote_average.desc</option>
+                        <option>vote_average.asc</option>
+                        <option>first_air_date.desc</option>
+                        <option>first_air_date.asc</option>
                         </select>
                         </div>
 
     <div class="uk-margin" >
-  <label for="">En que año se estreno?</label>
+  <label for="">En que año se estreno?              </label>
+<input type="text" name="anio" id="anio">
 
-                <select class="uk-select" id="año">d
-                </select>
                 </div>
-<button type="submit"class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Enviar</button>
+<button type="submit"class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" >Enviar</button>
     </fieldset>
 </form>
     </html>

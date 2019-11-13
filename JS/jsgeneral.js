@@ -16,10 +16,28 @@ window.addEventListener("load", function() {
   .catch(function(error) {
    console.log("Error: " + error);
   })
+// tratando de q ande el buscador//
 
-
-
-
-
-
+  var datos = new URLSearchParams(location.search);
+  var loBuscado = datos.get("buscador");
+console.log(loBuscado);
+if (loBuscado.length >= 3) {
+  fetch("https://api.themoviedb.org/3/search/movie?api_key=46aea19a7447a9c4b1cd03a96834279e&query="+ loBuscado +"&page=1&include_adult=true")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(respuesta) {
+    var fotos = respuesta.results
+    var cambioElH1 = document.querySelector("h1")
+    cambioElH1.innerHTML = "This are the results for " + loBuscado;
+    for (var i = 0; i < fotos.length; i++) {
+      document.querySelector(".pelis").innerHTML += "<div class='imgcontainer'><a href='generos.html?genreid=" + respuesta.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ respuesta.results[i].poster_path + "'>"
+    }
+  })
+  .catch(function(error) {
+    alert("Error, perdon, vuelva mas tarde")
+  })
+  }else {
+    alert ("Buscar con mas de 3 letras en el buscador porfavor")
+  }
 })

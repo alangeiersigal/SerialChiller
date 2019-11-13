@@ -17,7 +17,7 @@
 </head>
 <body>
   <div class="contengotodo">
-
+<!-- empiezo el nav -->
     <nav>
       <ul>
         <li class="LOGO"><a href="#">LOGO</a></li>
@@ -29,13 +29,13 @@
           </div>
         </div>
         <li class="NOVEDADES"><a href="#">NOVEDADES</a></li>
-        <li class="FAQ"> <a href="../HTML/FAQ.html">FAQ</a></li>
+        <li class="FAQ"> <a href="../HTML/resultadoDeBusqueda.html">BUSQUEDA AVANZADA</a></li>
         <li class="ABOUTUS"><a href="../HTML/ABOUTUS.html">ABOUT US</a></li>
-        <form class="form-search content-search navbar-form" action="" method="post">
+        <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
     <div class="input-group">
-        <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" />
+        <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" name="buscador" />
         <span class="input-group-btn">
-            <button type="submit" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
         </span>
     </div>
 </form>
@@ -43,29 +43,7 @@
         <li class="REGISTER"><a href="#">REGISTER</a></li>
       </ul>
     </nav>
-
-
-
-
-<!--<div class="estrenos">
-
-
-      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600; animation: push" id="latest">
-
-        <ul class="uk-slideshow-items" id="latest">
-
-        </ul>
-
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
-    </div>
-
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <!-- <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a> -->
-
-
-
+    <!-- termino el nav -->
     <div class="populares">
       <h1>Populares en Serial Chiller</h1>
       <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
