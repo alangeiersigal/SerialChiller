@@ -3,7 +3,6 @@
   font-family: 'Titillium Web', sans-serif;
 }
 body{
-  background-color: #071e3d;
   margin: 0;
   padding: 0;
 }
@@ -138,7 +137,6 @@ bottom: 2%;
   position: relative;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 0;
 
 }
 .uk-panel img:hover{

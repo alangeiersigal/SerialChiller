@@ -5,23 +5,10 @@
 body{
   margin: 0;
   padding: 0;
- background-color: #232931;
-
+  background-color: #232931;
 }
 .contengotodo {
   width: 100%;
-  background-color: #232931;
-}
+  background-color: #071e3d;
 
-h1 {
-    color: #af0404;
-    text-decoration: underline;
-    text-decoration-color: black;
-    margin-bottom: 80px;
-}
-h2.primero {
-color: white;
-}
-h2.segundo {
-  color: white;
 }
