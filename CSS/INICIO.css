@@ -266,7 +266,6 @@ bottom: 2%;
   font-size: 20px;
   margin-bottom: 0%;
   margin-left: 37%;
-
 }
 .follow p {
   margin: 0;
@@ -274,5 +273,16 @@ bottom: 2%;
 }
 footer a:hover {
   color: blue;
+
+}
+.derechos {
+  width: 60px;
+  margin-left: 15px;
+}
+.contengoderechos {
+display: flex;
+}
+.twitter {
+  margin-left: 3px;
 
 }
