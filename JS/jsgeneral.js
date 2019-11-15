@@ -5,16 +5,16 @@ window.addEventListener("load", function() {
     return response.json()
   })
   .then(function (data) {
-    console.log(data);
-    var generos = data.genres;
-    var dropdown = document.querySelector(".dropdown-content")
-    for (var i = 0; i < generos.length; i++) {
-      dropdown.innerHTML += "<a href=generos.html?idgenres=" + data.genres[i].id + "&nameGenre=" + data.genres[i].name + ">" + data.genres[i].name + "</a>";
-    }
+   // console.log(data);
+   var generos = data.genres;
+   var dropdown = document.querySelector(".dropdown-content")
+   for (var i = 0; i < generos.length; i++) {
+     dropdown.innerHTML += "<a href=generos.html?idgenres=" + data.genres[i].id + "&nameGenre=" + data.genres[i].name + ">" + data.genres[i].name + "</a>";
+   }
 
   })
   .catch(function(error) {
-    console.log("Error: " + error);
+   // console.log("Error: " + error);
   })
   // tratando de q ande el buscador//
 

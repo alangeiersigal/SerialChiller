@@ -32,7 +32,7 @@
           <li class="FAQ"> <a href="#">FAQ</a></li>
           <li class="ABOUTUS"><a href="#">ABOUT US</a></li>
           <div class="search">
-            <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
+            <form class="form-search content-search navbar-form" action="resultadoDeBusqueda.html" method="get">
         <div class="input-group">
             <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" name="buscador" />
             <span class="input-group-btn">
@@ -46,17 +46,18 @@
       <div class="todo">
         <!-- <h1>Bienvenido a la busqueda avanzada!</h1> -->
         <div class="formulario">
-    <form class="" action="submit" method="get">
+    <form class="" action="resultadoDeBusqueda.html" method="get">
     <fieldset class="uk-fieldset">
         <div class="uk-margin">
           <label for="">Que genero quiere buscar?</label>
             <select class="uk-select" name="quieroBuscar" id="quieroBuscar">
-
+<option value="vacio">Seleccione una opcion...</option>
             </select>
         </div>
         <div class="uk-margin">
           <label for=""> Que genero desea excluir de su busqueda?</label>
             <select class="uk-select" name="excluyo" id="excluyo">
+              <option value="vacio">Seleccione una opcion...</option>
 
                 </select>
 </div>
@@ -64,63 +65,27 @@
 <label for="">En que orden desea que aparezcan los resultados?</label>
 
                     <select class="uk-select" name="orden" id="orden">
-                        <option>popularity.desc</option>
-                        <option>popularity.asc</option>
-                        <option>vote_average.desc</option>
-                        <option>vote_average.asc</option>
-                        <option>first_air_date.desc</option>
-                        <option>first_air_date.asc</option>
+                      <option value="vacio">Seleccione una opcion...</option>
+                        <option value="popularity.desc"> Popularidad (Descendente)</option>
+                        <option value="popularity.asc">Popularidad (Ascendente)</option>
+                        <option value="vote_average.desc" > Calificacion (Descendente)</option>
+                        <option value="vote_average.asc">Calificacion (Ascendente)</option>
+                        <option value="first_air_date.desc">Fecha de estreno (Descendente)</option>
+                        <option value="first_air_date.asc">Fecha de estreno (Ascendente)</option>
                         </select>
-                        </div>
+                      </div>
 
     <div class="uk-margin" >
-  <label for="">En que año se estreno?              </label>
+  <label for="">En que año se estreno?</label>
 <input type="text" name="anio" id="anio">
 
                 </div>
-<button type=submit class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" >Enviar</button>
+<button action= "resultadoDeBusqueda.html" class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" >Enviar</button>
     </fieldset>
     </div>
 </form>
 <div class="oculto">
   <h1>The results of your search are:</h1>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
-
-    <ul class="uk-slider-items uk-grid">
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="../IMG/popu.jpg" alt="">
-                <div class="uk-position-center uk-panel"></div>
-            </div>
-        </li>
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="../IMG/popu.jpg" alt="">
-                <div class="uk-position-center uk-panel"></div>
-            </div>
-        </li>
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="../IMG/popu.jpg" alt="">
-                <div class="uk-position-center uk-panel"></div>
-            </div>
-        </li>
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="../IMG/popu.jpg" alt="">
-                <div class="uk-position-center uk-panel"></div>
-            </div>
-        </li>
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="../IMG/popu.jpg" alt="">
-                <div class="uk-position-center uk-panel"></div>
-            </div>
-        </li>
-    </ul>
-
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
 </div>
 </div>

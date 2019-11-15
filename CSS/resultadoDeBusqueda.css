@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body{
   margin: 0;
   padding: 0;
@@ -11,30 +14,31 @@ body{
   width: 60%;
   background-color: #f1f1f1;
   position: absolute;
-  left: 25%;
-  top: 12%;
+  left: 20%;
+  top: 8%;
 }
-
 .uk-button {
   background-color: grey;
   color: white;
 }
 .oculto{
   position: relative;
-  display: flex;
-  top: 63%;
+  top: 45%;
 color: white;
-justify-content: space-around;
-background-color: #f1f1f1;
+justify-content:center;
+background-color: #232931;
+display:none;
 }
 .oculto h1 {
   color: white;
+  top: 65%;
+  width: 100%;
 }
-img {
-  margin: 5px 5px 5px 5px;
-  position: absolute;
-  top:70%;
+.oculto img {
+width: 22.5%;
+margin: 10px 15px 10px 15px;
 }
-.img1 {
-margin-right: 10px;
+.oculto img:hover{
+  border:2px solid #4ecca3;
+  border-radius: 5px;
 }

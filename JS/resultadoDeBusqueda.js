@@ -5,15 +5,15 @@ window.onload = function (){
       return response.json();
     })
     .then (function (data){
-console.log(data);
+// console.log(data);
 var select = document.querySelector ('#quieroBuscar')
       var generos = data.genres;
       for (var i = 0; i < generos.length; i++) {
-         select.innerHTML += '<option>'+ data.genres[i].name + '</option>';
+         select.innerHTML += '<option value='+data.genres[i].id+'>'+ data.genres[i].name + '</option>';
       }
     })
     .catch(function(error) {
-    console.log(error)
+    // console.log(error)
   })
   //las que no quiero
   fetch ('https://api.themoviedb.org/3/genre/tv/list?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US')
@@ -21,40 +21,65 @@ var select = document.querySelector ('#quieroBuscar')
       return response.json();
     })
     .then (function (data){
-console.log(data);
+// console.log(data);
 var select = document.querySelector ('#excluyo')
       var generos = data.genres;
       for (var i = 0; i < generos.length; i++) {
-         select.innerHTML += '<option>'+ data.genres[i].name + '</option>';
+         select.innerHTML += '<option value='+data.genres[i].id+'>'+ data.genres[i].name + '</option>';
       }
     })
     .catch(function(error) {
-    console.log(error)
+    // console.log(error)
   })
   //orden q quiero q aparezcan
 
   //anio
   var datos = new URLSearchParams(location.search);
+  var quieroGeneros = datos.get("quieroBuscar")
+  var excluyoGeneros = datos.get("excluyo")
+  var orden = datos.get ('orden')
 var anio = datos.get('anio')
-//cuando apreto que quiero q pase URLSearchParams.get()
-var quieroGeneros = datos.get("quierobuscar")
-var excluyoGeneros = datos.get("excluyo")
-console.log(excluyoGeneros);
-var orden = datos.get ('orden');
-if (quieroGeneros != "null") {
-
+if (quieroGeneros != "null" && excluyoGeneros != "null" && orden != "null" && anio != "null") {
+if (quieroGeneros != excluyoGeneros){
+// Le saco el null a todos y le digo vacio
+if(anio != "vacio"){
+  anio = '&first_air_date_year=' + anio
+}else {
+  anio = "";
 }
-fetch ("https://api.themoviedb.org/3/discover/tv?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US&sort_by="+ orden +"&popularity.desc&first_air_date_year="+ anio +"&page=1&timezone=America%2FNew_York&with_genres="+ quieroGeneros +"&without_genres="+ excluyoGeneros +"&include_null_first_air_dates=false")
+if (excluyoGeneros != "vacio") {
+  excluyoGeneros = "&without_genres=" + excluyoGeneros
+} else {
+  excluyoGeneros = ""
+}
+if (quieroGeneros != "vacio"){
+  quieroGeneros = "&with_genres=" + quieroGeneros
+}else {
+  quieroGeneros = ""
+}
+if (orden != "vacio"){
+  orden =  "&sort_by=" + orden
+}else {
+  orden = ""
+}
+fetch ("https://api.themoviedb.org/3/discover/tv?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US"+ orden + anio + quieroGeneros + excluyoGeneros)
 .then(function(response) {
     return response.json();
   })
   .then (function (data){
+    console.log(data);
     var fotos = data.results
-    var cambioElH1 = document.querySelector("h1")
-    cambioElH1.innerHTML = "This are the results of your search ";
     for (var i = 0; i < fotos.length; i++) {
-      document.querySelector(".pelis").innerHTML += "<div class='imgcontainer'><a href='generos.html?genreid=" + respuesta.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ respuesta.results[i].poster_path + "'>"
+      document.querySelector(".oculto").innerHTML += "<a href='resultadoDeBusqueda.html?genreid=" + data.results[i].id + "'><img src='http://image.tmdb.org/t/p/original" + data.results[i].poster_path + "'>";
+// document.querySelector (option).innerHTML =
+ document.querySelector(".oculto").style.display= "block";
 
     }
   })
+}else {
+  alert ("No podes excluir y querer un genero a la vez!")
+}
+}else {
+  alert ("Porfavor, completa algun campo!")
+}
 }
