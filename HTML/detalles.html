@@ -1,0 +1,90 @@
+<html lang="en" dir="ltr">
+<head>
+  <script src="../JS/jsgeneral.js" charset="utf-8"></script>
+  <script src="../JS/detalles.js" charset="utf-8"></script>
+  <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="../CSS/cssgeneral.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/busqueda.css">
+  <link rel="stylesheet" href="../CSS/detalles.css">
+  <meta charset="utf-8">
+  <title>Proyecto integrador</title>
+</head>
+<body>
+  <div class="contengotodo">
+<!-- empiezo el nav -->
+    <nav>
+      <ul>
+        <li class="LOGO"><a href="#">LOGO</a></li>
+        <li class="INICIO"><a href="../HTML/INICIO.html">INICIO</a></li>
+        <div class="dropdown">
+          <a class="drop" href="../HTML/generos.html">SERIES</a>
+          <div class="dropdown-content">
+
+          </div>
+        </div>
+        <li class="NOVEDADES"><a href="#">NOVEDADES</a></li>
+        <li class="FAQ"> <a href="../HTML/resultadoDeBusqueda.html">BUSQUEDA AVANZADA</a></li>
+        <li class="ABOUTUS"><a href="../HTML/ABOUTUS.html">ABOUT US</a></li>
+        <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
+    <div class="input-group">
+        <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" name="buscador" />
+        <span class="input-group-btn">
+            <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        </span>
+    </div>
+</form>
+        <li class="LOGIN"><a href="#">LOGIN</a></li>
+        <li class="REGISTER"><a href="#">REGISTER</a></li>
+      </ul>
+    </nav>
+    <div class="contenedor-todo">
+
+    <h1 style="width: 100%">Titulo de la Serie</h1>
+    <div class="contenedor-detalles" style="width: 80%">
+
+    <div class="poster-container">
+      <img src="../IMG/popu.jpg" alt="">
+      <div class="trailers">
+        <button class="trailer-button" type="button" name="ver trailer"> Ver trailer</button>
+      </div>
+    </div>
+    <div class="stuff">
+      <div class="descripcion">
+        <p>
+          <span>
+            <b>Fecha de estreno:</b>
+
+          </span>
+
+          <span>
+            <b>Generos:</b>
+
+          </span>
+
+          <span>
+            <b>Idioma:</b>
+
+          </span>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="uk-inline recomendaciones">
+    <button class="uk-button recomendaciones uk-button-default" type="button">Recomendaciones</button>
+      <div  uk-drop="pos:bottom" >
+          <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
