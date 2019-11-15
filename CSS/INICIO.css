@@ -236,10 +236,10 @@ bottom: 2%;
   margin-left: 2%;
   display: flex;
   flex-flow: column wrap;
-
 }
 .columnaizq p {
   margin-top: inherit;
+  color: white;
 }
 .columnaizq p a {
   color: white;
