@@ -1,18 +1,40 @@
-.formulario {
-  position: relative;
-  background-color: white;
-  bottom: 50%;
+body{
+  margin: 0;
+  padding: 0;
 }
-form {
-  width: 50%;
-  background-color:lightgrey;
+.todo {
+  width: 100%;
+  position: relative;
+  height: 1100px;
+}
+.todo .formulario {
+  width: 60%;
+  background-color: #f1f1f1;
   position: absolute;
   left: 25%;
-  top: 19%;
-height: 500px;
+  top: 12%;
 }
+
 .uk-button {
   background-color: grey;
   color: white;
-
+}
+.oculto{
+  position: relative;
+  display: flex;
+  top: 63%;
+color: white;
+justify-content: space-around;
+background-color: #f1f1f1;
+}
+.oculto h1 {
+  color: white;
+}
+img {
+  margin: 5px 5px 5px 5px;
+  position: absolute;
+  top:70%;
+}
+.img1 {
+margin-right: 10px;
 }
