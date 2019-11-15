@@ -9,7 +9,6 @@
 
 /* Definimos las transiciones */
 .navbar-form .form-control[type=text] {
-    background: transparent;
     display:inline-block;
     transition: all .5s;
 }
