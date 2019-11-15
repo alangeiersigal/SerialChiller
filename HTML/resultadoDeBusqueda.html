@@ -17,7 +17,7 @@
     <title></title>
   </head>
   <body>
-    <div class="contengotodo">
+
       <nav>
         <ul>
           <li class="LOGO"><a href="#">LOGO</a></li>
@@ -43,7 +43,10 @@
           </div>
         </ul>
       </nav>
-    <form class="" action="busqueda.html" method="get">
+      <div class="todo">
+        <!-- <h1>Bienvenido a la busqueda avanzada!</h1> -->
+        <div class="formulario">
+    <form class="" action="submit" method="get">
     <fieldset class="uk-fieldset">
         <div class="uk-margin">
           <label for="">Que genero quiere buscar?</label>
@@ -75,7 +78,51 @@
 <input type="text" name="anio" id="anio">
 
                 </div>
-<button type="submit"class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" >Enviar</button>
+<button type=submit class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" >Enviar</button>
     </fieldset>
+    </div>
 </form>
+<div class="oculto">
+  <h1>The results of your search are:</h1>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+    <ul class="uk-slider-items uk-grid">
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="../IMG/popu.jpg" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="../IMG/popu.jpg" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="../IMG/popu.jpg" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="../IMG/popu.jpg" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="../IMG/popu.jpg" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+</div>
+</div>
     </html>

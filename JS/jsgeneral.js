@@ -34,10 +34,11 @@ if (loBuscado.length >= 3) {
       document.querySelector(".pelis").innerHTML += "<div class='imgcontainer'><a href='generos.html?genreid=" + respuesta.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ respuesta.results[i].poster_path + "'>"
     }
   })
+  // setTimeout(function(){ x.value = "2 seconds" }, 2000)
   .catch(function(error) {
     alert("Error, perdon, vuelva mas tarde")
   })
   }else {
-    alert ("Buscar con mas de 3 letras en el buscador porfavor")
+alert ("Buscar con mas de 3 letras en el buscador porfavor")
   }
 })
