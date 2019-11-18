@@ -39,7 +39,7 @@ var select = document.querySelector ('#excluyo')
   var excluyoGeneros = datos.get("excluyo")
   var orden = datos.get ('orden')
 var anio = datos.get('anio')
-if (quieroGeneros != "null" && excluyoGeneros != "null" && orden != "null" && anio != "null") {
+if (quieroGeneros != "vacio" && excluyoGeneros != "vacio" && orden != "vacio" && anio != "vacio") {
 if (quieroGeneros != excluyoGeneros){
 // Le saco el null a todos y le digo vacio
 if(anio != "vacio"){
