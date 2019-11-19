@@ -10,9 +10,15 @@ body{
 .contengotodo {
   width: 100%;
   background-color: #071e3d;
-
+position: relative;
 }
 /*cosas para el nav */
+.Estoesdemobile{
+  display: none;
+}
+.navmobile {
+  display: none;
+}
 nav {
   display: flex;
   background-color: #278ea5;
@@ -284,4 +290,42 @@ display: flex;
 }
 .twitter {
   margin-left: 3px;
+}
+@media (max-width: 769px) {
+   nav {
+display: none;
+  }
+  .navmobile {
+    display: block;
+    width: 10%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+  }
+   h1 {
+    text-align: center;
+  }
+  .navmobile ul li {
+    list-style-type: none;
+  }
+  .navmobile ul li a  {
+    text-decoration: none;
+  }
+  .navmobile .form-search {
+    top: 20%;
+    right: 0%;
+  }
+  .Estoesdemobile {
+   position: relative;
+   height: 110px;
+  }
+  .Estoesdemobile img {
+    width: 30%;
+    right: 35%;
+position: absolute;
+    align-items: center;
+  }
+footer {
+
+}
 }

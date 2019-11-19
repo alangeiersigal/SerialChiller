@@ -13,33 +13,73 @@
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/busqueda.css">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
   <title>Proyecto integrador</title>
 </head>
 <body>
   <div class="contengotodo">
-<!-- empiezo el nav -->
-    <nav>
+    <!-- Imagen de mobile -->
+
+    <!-- Nav de mobile -->
+    <div class="Estoesdemobile">
+<img src="../IMG/netflix.jpg" alt="">
+    </div>
+    <section class="navmobile">
+
+     <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push"><img src="../IMG/iconoo.png" alt=""></button>
+    <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul>
+          <li class="INICIO"><a href="../HTML/INICIO.html">INICIO</a></li>
+          <div class="dropdown">
+            <a class="drop" href="../HTML/generos.html">SERIES</a>
+            <div class="dropdown-content">
+
+            </div>
+          </div>
+          <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
+      <div class="input-group">
+          <input placeholder="Buscar" class="form-control form-text" type="text" size="50" maxlength="50" name="buscador" />
+          <span class="input-group-btn">
+              <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </span>
+      </div>
+  </form>
+  <li><a href="resultadoDeBusqueda.html"> BUSQUEDA AVANZADA </a></li>
+        </ul>
+
+    </div>
+</div>
+    </section>
+<!-- empiezo el nav de pc -->
+    <nav class="navpc">
       <ul>
         <li class="LOGO"><a href="#">LOGO</a></li>
         <li class="INICIO"><a href="../HTML/INICIO.html">INICIO</a></li>
         <div class="dropdown">
-          <a class="drop" href="../HTML/generos.html">SERIES</a>
+          <a class="drop" href="#">SERIES</a>
           <div class="dropdown-content">
 
           </div>
         </div>
+        <li><a href="resultadoDeBusqueda.html"> BUSQUEDA AVANZADA </a></li>
         <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
-    <div class="input-group">
-        <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" name="buscador" />
+
+        <input placeholder="Buscar" class="form-control form-text" type="text" size="5" maxlength="128" name="buscador" />
         <span class="input-group-btn">
             <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
         </span>
     </div>
 </form>
-<li><a href="resultadoDeBusqueda.html"> BUSQUEDA AVANZADA </a></li>
       </ul>
     </nav>
     <!-- termino el nav -->
+
+
+    <!-- Terminio carrusel mobile y empieza el de web pc -->
     <div class="populares">
       <h1>Populares en Serial Chiller</h1>
       <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>

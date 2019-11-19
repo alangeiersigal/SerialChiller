@@ -1,116 +1,95 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
 
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
-      <link rel="stylesheet" href="../CSS/INICIO.css">
-      <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/INICIO.css">
-    <link rel="stylesheet" href="../CSS/resultadoDeBusqueda.css">
-    <script src="" charset="utf-8"></script>
-    <script src="../JS/resultadoDeBusqueda.js" charset="utf-8"></script>
-    <script src="../JS/jsgeneral.js" charset="utf-8"></script>
-    <title></title>
-  </head>
-  <body>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="../CSS/INICIO.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/INICIO.css">
+  <link rel="stylesheet" href="../CSS/resultadoDeBusqueda.css">
+  <script src="" charset="utf-8"></script>
+  <script src="../JS/resultadoDeBusqueda.js" charset="utf-8"></script>
+  <script src="../JS/jsgeneral.js" charset="utf-8"></script>
+  <title></title>
+</head>
+<body>
 
-      <nav>
-        <ul>
-          <li class="LOGO"><a href="#">LOGO</a></li>
-          <li class="INICIO"><a href="INICIO.html">INICIO</a></li>
-          <div class="dropdown">
-            <a class="drop" href="#">SERIES</a>
-            <div class="dropdown-content">
+  <nav>
+    <ul>
+      <li class="LOGO"><a href="#">LOGO</a></li>
+      <li class="INICIO"><a href="INICIO.html">INICIO</a></li>
+      <div class="dropdown">
+        <a class="drop" href="#">SERIES</a>
+        <div class="dropdown-content">
 
-            </div>
-          </div>
-          <li class="NOVEDADES"><a href="#">NOVEDADES</a></li>
-          <li class="FAQ"> <a href="#">FAQ</a></li>
-          <li class="ABOUTUS"><a href="#">ABOUT US</a></li>
-          <div class="search">
-            <form class="form-search content-search navbar-form" action="resultadoDeBusqueda.html" method="get">
-        <div class="input-group">
+        </div>
+      </div>
+      <li class="NOVEDADES"><a href="#">NOVEDADES</a></li>
+      <li class="FAQ"> <a href="#">FAQ</a></li>
+      <li class="ABOUTUS"><a href="#">ABOUT US</a></li>
+      <div class="search">
+        <form class="form-search content-search navbar-form" action="resultadoDeBusqueda.html" method="get">
+          <div class="input-group">
             <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" name="buscador" />
             <span class="input-group-btn">
-                <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+              <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
             </span>
-        </div>
-    </form>
           </div>
-        </ul>
-      </nav>
-      <div class="todo">
-        <!-- <h1>Bienvenido a la busqueda avanzada!</h1> -->
-        <div class="formulario">
-    <form class="" action="resultadoDeBusqueda.html" method="get">
-    <fieldset class="uk-fieldset">
-        <div class="uk-margin">
-          <label for="">Que genero quiere buscar?</label>
+        </form>
+      </div>
+    </ul>
+  </nav>
+  <div class="todo">
+    <!-- <h1>Bienvenido a la busqueda avanzada!</h1> -->
+    <div class="formulario">
+      <form class="" action="resultadoDeBusqueda.html" method="get">
+        <fieldset class="uk-fieldset">
+          <div class="uk-margin">
+            <label for="">Que genero quiere buscar?</label>
             <select class="uk-select" name="quieroBuscar" id="quieroBuscar">
-<option value="vacio">Seleccione una opcion...</option>
+              <option value="vacio">Seleccione una opcion...</option>
             </select>
-        </div>
-        <div class="uk-margin">
-          <label for=""> Que genero desea excluir de su busqueda?</label>
+          </div>
+          <div class="uk-margin">
+            <label for=""> Que genero desea excluir de su busqueda?</label>
             <select class="uk-select" name="excluyo" id="excluyo">
               <option value="vacio">Seleccione una opcion...</option>
 
-                </select>
-</div>
-<div class="uk-margin" >
-<label for="">En que orden desea que aparezcan los resultados?</label>
+            </select>
+          </div>
+          <div class="uk-margin" >
+            <label for="">En que orden desea que aparezcan los resultados?</label>
 
-                    <select class="uk-select" name="orden" id="orden">
-                      <option value="vacio">Seleccione una opcion...</option>
-                        <option value="popularity.desc"> Popularidad (Descendente)</option>
-                        <option value="popularity.asc">Popularidad (Ascendente)</option>
-                        <option value="vote_average.desc" > Calificacion (Descendente)</option>
-                        <option value="vote_average.asc">Calificacion (Ascendente)</option>
-                        <option value="first_air_date.desc">Fecha de estreno (Descendente)</option>
-                        <option value="first_air_date.asc">Fecha de estreno (Ascendente)</option>
-                        </select>
-                      </div>
+            <select class="uk-select" name="orden" id="orden">
+              <option value="vacio">Seleccione una opcion...</option>
+              <option value="popularity.desc"> Popularidad (Descendente)</option>
+              <option value="popularity.asc">Popularidad (Ascendente)</option>
+              <option value="vote_average.desc" > Calificacion (Descendente)</option>
+              <option value="vote_average.asc">Calificacion (Ascendente)</option>
+              <option value="first_air_date.desc">Fecha de estreno (Descendente)</option>
+              <option value="first_air_date.asc">Fecha de estreno (Ascendente)</option>
+            </select>
+          </div>
 
-    <div class="uk-margin" >
-  <label for="">En que año se estreno?</label>
-<input type="text" name="anio" id="anio">
+          <div class="uk-margin" >
+            <label for="">En que año se estreno?</label>
+            <input type="text" name="anio" id="anio">
 
-                </div>
-<button action= "resultadoDeBusqueda.html" class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" >Enviar</button>
-    </fieldset>
+          </div>
+          <button id="boton" action="resultadoDeBusqueda.html" class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" >Enviar</button>
+        </fieldset>
+      </div>
+    </form>
+    <div class="oculto">
+      <h1>The results of your search are:</h1>
+
+
     </div>
-</form>
-<div class="oculto">
-  <h1>The results of your search are:</h1>
+  </div>
+</div>
 
-
-</div>
-</div>
-</div>
-<footer class="footer-container">
-  <nav class="footer-nav">
-    <div class="columnaizq">
-      <p>Creadores:</p>
-      <p>Alan Geier</p>
-    <p>Matteo Lovatto</p>
-<p>Agustin Tolle</p>
-    </div>
-    <div class="follow">
-      <p>Follow Us!</p>
-      <a href="https://twitter.com/login?lang=es"><img src="../IMG/twitter.png" alt=""></a>
-      <a href="https://www.instagram.com/?hl=es-la"><img src="../IMG/instagram.png" alt=""></a>
-      <a href="https://es-la.facebook.com/"><img src="../IMG/facebook.png" alt=""></a>
-    </div>
-    <div class="columnader">
-      <h5>CONTACTOS:</h5>
-      <p class="footer-p">serialchiller@gmail.com</p>
-      <p class="footer-p">0800-1423-5671</p>
-    </div>
-  </nav>
-</div>
-</footer>
-    </html>
+</html>

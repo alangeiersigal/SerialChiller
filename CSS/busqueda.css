@@ -1,3 +1,6 @@
+h1 {
+  color: white;
+}
 /* Adaptamos las reglas al código que genera drupal y definimos los estilos generales */
 
 /* Lo primero es posicionar el formulario para asegurarnos que el efecto se produce de derecha a izquierda */
