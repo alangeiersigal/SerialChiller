@@ -41,7 +41,7 @@ var select = document.querySelector ('#excluyo')
   var anio = datos.get('anio')
 console.log(quieroGeneros);
 //cuando envio los datos del form, debo validar
-if (quieroGeneros != null) {
+// if (quieroGeneros != null) {
 var todosTienenData = quieroGeneros != "vacio" && excluyoGeneros != "vacio" && orden != "vacio" && anio != "vacio";
 var todosMenosQuiero = quieroGeneros == "vacio" && excluyoGeneros != "vacio" && orden != "vacio" && anio != "vacio";
 var todosMenosExcluyo = quieroGeneros != "vacio" && excluyoGeneros == "vacio" && orden != "vacio" && anio != "vacio";
@@ -54,16 +54,31 @@ var todosMenosExcluyoyOrden = quieroGeneros != "vacio" && excluyoGeneros == "vac
 var todosMenosExcluyoyAnio = quieroGeneros != "vacio" && excluyoGeneros == "vacio" && orden != "vacio" && anio == "vacio";
 var todosMenosOrdenyAnio = quieroGeneros != "vacio" && excluyoGeneros != "vacio" && orden == "vacio" && anio == "vacio";
 var aniosolo = quieroGeneros == "vacio" && excluyoGeneros == "vacio" && orden == "vacio" && anio != "vacio"
+var todoVacio = quieroGeneros == "vacio" && excluyoGeneros == "vacio" && orden == "vacio" && anio == "vacio";
 
-
-if (todosTienenData||todosMenosQuiero||todosMenosExcluyo||todosMenosOrden||todosMenosAnio||todosMenosQuieroyExcluyo || todosMenosQuieroyOrden || todosMenosQuieroyAnio||todosMenosExcluyoyOrden||todosMenosExcluyoyAnio||todosMenosOrdenyAnio || aniosolo) {
+// if (todosTienenData||todosMenosQuiero||todosMenosExcluyo||todosMenosOrden||todosMenosAnio||todosMenosQuieroyExcluyo || todosMenosQuieroyOrden || todosMenosQuieroyAnio||todosMenosExcluyoyOrden||todosMenosExcluyoyAnio||todosMenosOrdenyAnio || aniosolo) {
 
   //condiciones:
   // 1) el campo de generos debe ser diferente al campo de genereos a excluir
   // 2) quieroGeneros = excluyoGeneros = vacio pero orden != vacio
   //3) quieroGeneros = excluyoGeneros = vacio pero anio != vacio
-  if (quieroGeneros != excluyoGeneros){
+  // if (quieroGeneros != excluyoGeneros){
     // Le saco el null a todos y le digo vacio
+    if (quieroGeneros != null) {
+    if (quieroGeneros == "vacio" && excluyoGeneros == "vacio" && orden == "vacio" && !anio) {
+      alert ("Completa algun campo porfavor")
+
+    }else {
+      if (quieroGeneros == excluyoGeneros && quieroGeneros != "vacio" && excluyoGeneros !="vacio" ){
+        alert ("No podes excluir y querer un mismo genero!")
+      }else {
+        if (quieroGeneros == "vacio" && excluyoGeneros == "vacio" && orden != "vacio" && anio == "") {
+
+
+
+      console.log(quieroGeneros,excluyoGeneros,orden,anio);
+
+
     if(anio != "vacio"){
       anio = '&first_air_date_year=' + anio
     }else {
@@ -98,13 +113,22 @@ if (todosTienenData||todosMenosQuiero||todosMenosExcluyo||todosMenosOrden||todos
 
         }
         })
-      }else {
-        alert ("No podes excluir y querer un genero a la vez!")
+} else {
+  alert ("No tiene sentido buscar solo por orden!")
+}
       }
-  }else {
-    alert ("Porfavor, completa algun campo!")
-  }
+      }
+    }
+      // }
+}
+  //     }else if(quieroGeneros == excluyoGeneros && anio == 'vacio' && orden == ''){
+  //       alert ("No podes excluir y querer un genero a la vez!")
+  //     }else{
+  //       alert ("Porfavor, completa algun campo!")
+  //     }
+  // }else  {
+  //   alert ("Porfavor, completa algun campo!")
+  // }
 // document.querySelector("button").addEventListener ("click", function (event)) {
 //   event.preventDefault();
-}
-}
+// }

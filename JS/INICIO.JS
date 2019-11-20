@@ -1,4 +1,13 @@
 window.onload = function (){
+  window.onclick = function(e) {
+  var myDropdown = document.getElementById("myDropdown");
+  if (!e.target.matches('.dropbtn')) {
+myDropdown.classList.remove('show');
+
+  } else {
+      myDropdown.classList.add('show');
+  }
+}
   // console.log(4);
   fetch ('https://api.themoviedb.org/3/tv/popular?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US&page=1')
 .then(function(response) {

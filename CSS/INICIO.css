@@ -325,6 +325,10 @@ display: none;
 position: absolute;
     align-items: center;
   }
+  ul li a:hover {
+    color: #071E3D;
+    text-decoration: none;
+  }
 footer {
 
 }

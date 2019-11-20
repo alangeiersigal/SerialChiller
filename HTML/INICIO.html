@@ -3,15 +3,17 @@
 <head>
   <script src="../JS/jsgeneral.js" charset="utf-8"></script>
   <script src="../JS/INICIO.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../CSS/INICIO.css">
+  <link rel="stylesheet" href="../CSS/busqueda.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
 
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
-  <link rel="stylesheet" href="../CSS/INICIO.css">
+<script src="https://kit.fontawesome.com/91905e4d27.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../CSS/busqueda.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <title>Proyecto integrador</title>
@@ -34,12 +36,13 @@
 
         <ul>
           <li class="INICIO"><a href="../HTML/INICIO.html">INICIO</a></li>
-          <div class="dropdown">
-            <a class="drop" href="../HTML/generos.html">SERIES</a>
-            <div class="dropdown-content">
-
-            </div>
-          </div>
+          <div class="dropdown"  >
+                  <button class="dropbtn">GENEROS
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+              </div>
+              <div class="dropdown-content" id="myDropdown">
+              </div>
           <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
       <div class="input-group">
           <input placeholder="Buscar" class="form-control form-text" type="text" size="50" maxlength="50" name="buscador" />
