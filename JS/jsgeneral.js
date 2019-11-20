@@ -7,9 +7,13 @@ window.addEventListener("load", function() {
   .then(function (data) {
    // console.log(data);
    var generos = data.genres;
-   var dropdown = document.querySelector(".dropdown-content")
-   for (var i = 0; i < generos.length; i++) {
-     dropdown.innerHTML += "<a href=generos.html?idgenres=" + data.genres[i].id + "&nameGenre=" + data.genres[i].name + ">" + data.genres[i].name + "</a>";
+   var arrayDropdown = document.querySelectorAll(".dropdown-content")
+   var listadoDeGeneros = ""
+   for (var x = 0; x < arrayDropdown.length; x++) {
+     for (var i = 0; i < generos.length; i++) {
+       listadoDeGeneros += "<a href=generos.html?idgenres=" + data.genres[i].id + "&nameGenre=" + data.genres[i].name + ">" + data.genres[i].name + "</a>";
+     }
+     arrayDropdown[x].innerHTML = listadoDeGeneros
    }
 
   })
@@ -19,8 +23,10 @@ window.addEventListener("load", function() {
   // tratando de q ande el buscador//
 
   var datos = new URLSearchParams(location.search);
+  console.log(datos);
   var loBuscado = datos.get("buscador");
-  console.log(loBuscado);
+  // console.log(loBuscado);
+
   if (loBuscado != null) {
     if (loBuscado.length >= 3) {
       fetch("https://api.themoviedb.org/3/search/movie?api_key=46aea19a7447a9c4b1cd03a96834279e&query="+ loBuscado +"&page=1&include_adult=true")
@@ -36,7 +42,7 @@ window.addEventListener("load", function() {
         }
       })
       // setTimeout(function(){ x.value = "2 seconds" }, 2000)
-      
+
       }
   // arranca el js del alert
       else {
@@ -46,5 +52,7 @@ window.addEventListener("load", function() {
       }, 3000);
       // TERMINA EL JS DEL ALERT. EL SET TIME OUT LO SACAMOS DE UIKIT, DE LA PARTE DE ALERTS.
     }
+  }else {
+    alert ("No existe esa serie!")
   }
 })

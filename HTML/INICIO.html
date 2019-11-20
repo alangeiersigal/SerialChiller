@@ -36,13 +36,6 @@
 
         <ul>
           <li class="INICIO"><a href="../HTML/INICIO.html">INICIO</a></li>
-          <div class="dropdown"  >
-                  <button class="dropbtn">GENEROS
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-              </div>
-              <div class="dropdown-content" id="myDropdown">
-              </div>
           <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
       <div class="input-group">
           <input placeholder="Buscar" class="form-control form-text" type="text" size="50" maxlength="50" name="buscador" />
@@ -52,6 +45,10 @@
       </div>
   </form>
   <li><a href="resultadoDeBusqueda.html"> BUSQUEDA AVANZADA </a></li>
+  <div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Generos</button>
+    <div uk-dropdown class="dropdown-content"></div>
+</div>
         </ul>
 
     </div>
@@ -63,7 +60,7 @@
         <li class="LOGO"><a href="#">LOGO</a></li>
         <li class="INICIO"><a href="../HTML/INICIO.html">INICIO</a></li>
         <div class="dropdown">
-          <a class="drop" href="#">SERIES</a>
+          <a class="drop" href="#">Generos</a>
           <div class="dropdown-content">
 
           </div>
@@ -80,7 +77,6 @@
       </ul>
     </nav>
     <!-- termino el nav -->
-
     <!-- Terminio carrusel mobile y empieza el de web pc -->
     <div class="populares">
       <h1>Populares en Serial Chiller</h1>
@@ -124,7 +120,7 @@
         <br><br>
 
         <footer class="footer-container">
-          <nav class="footer-nav">
+          <section class="footer-nav">
             <div class="columnaizq">
               <p>Creadores:</p>
               <p>Alan Geier</p>
@@ -148,10 +144,12 @@
               <p class="footer-p">serialchiller@gmail.com</p>
               <p class="footer-p">0800-1423-5671</p>
             </div>
-          </nav>
+          </section>
         </div>
       </footer>
+<section>
 
+</section>
 
     </body>
     </html>
