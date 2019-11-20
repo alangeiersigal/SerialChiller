@@ -28,12 +28,12 @@ fetch("https://api.themoviedb.org/3/tv/" + idSeries + "?api_key=46aea19a7447a9c4
   }
 })
 
-fetch("https://api.themoviedb.org/3/tv/"+ idSeries +"/videos?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US
-")
-.then(function(response) {
- return response.json()
-})
-.then(function(trailerData) {
-
-})
+// fetch("https://api.themoviedb.org/3/tv/"+ idSeries +"/videos?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US
+// ")
+// .then(function(response) {
+//  return response.json()
+// })
+// .then(function(trailerData) {
+//
+// })
 }
