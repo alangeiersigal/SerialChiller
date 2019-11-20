@@ -52,7 +52,5 @@ window.addEventListener("load", function() {
       }, 3000);
       // TERMINA EL JS DEL ALERT. EL SET TIME OUT LO SACAMOS DE UIKIT, DE LA PARTE DE ALERTS.
     }
-  }else {
-    alert ("No existe esa serie!")
   }
 })
