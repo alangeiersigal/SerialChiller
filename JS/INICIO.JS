@@ -19,7 +19,7 @@ myDropdown.classList.remove('show');
       var ul = document.querySelector('#populares');
       var li = '';
       for (var i = 0; i < series.length; i++) {
-         ul.innerHTML +="<li><a href='detalle.html?id=" + data.results[i].id + "'><div class='uk-panel'><img src='https://image.tmdb.org/t/p/original"+ series[i].poster_path + "'><div class='uk-position-center uk-panel'></div></div></li></a></li>";
+         ul.innerHTML +="<li><a href='detalles.html?id=" + data.results[i].id + "'><div class='uk-panel'><img src='https://image.tmdb.org/t/p/original"+ series[i].poster_path + "'><div class='uk-position-center uk-panel'></div></div></li></a></li>";
       }
     })
     .catch(function(error) {
@@ -35,7 +35,7 @@ myDropdown.classList.remove('show');
       var ul = document.querySelector('#recomendadas');
       var li = '';
       for (var i = 0; i < series.length; i++) {
-         ul.innerHTML +="<li><a href='detalle.html?id=" + data.results[i].id + "'><div class='uk-panel'><img src='https://image.tmdb.org/t/p/original"+ series[i].poster_path + "'><div class='uk-position-center uk-panel'></div></div></li></a></li>";
+         ul.innerHTML +="<li><a href='detalles.html?id=" + data.results[i].id + "'><div class='uk-panel'><img src='https://image.tmdb.org/t/p/original"+ series[i].poster_path + "'><div class='uk-position-center uk-panel'></div></div></li></a></li>";
       }
     })
     .catch(function(error) {
@@ -51,7 +51,7 @@ myDropdown.classList.remove('show');
       var ul = document.querySelector('#vivo');
       var li = '';
       for (var i = 0; i < series.length; i++) {
-         ul.innerHTML +="<li><a href='detalle.html?id=" + data.results[i].id + "'><div class='uk-panel'><img src='https://image.tmdb.org/t/p/original"+ series[i].poster_path + "'><div class='uk-position-center uk-panel'></div></div></li></a></li>";
+         ul.innerHTML +="<li><a href='detalles.html?id=" + data.results[i].id + "'><div class='uk-panel'><img src='https://image.tmdb.org/t/p/original"+ series[i].poster_path + "'><div class='uk-position-center uk-panel'></div></div></li></a></li>";
       }
     })
     .catch(function(error) {
