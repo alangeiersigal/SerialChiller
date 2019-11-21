@@ -28,6 +28,64 @@ fetch("https://api.themoviedb.org/3/tv/" + idSeries + "?api_key=46aea19a7447a9c4
   }
 })
 
+
+
+
+
+
+
+
+//EMPIEZO CON favoritos
+var recuperoStorage = localStorage.getItem("series");
+
+  // Si todavía no tenía gifs favoritos
+  if (recuperoStorage == null) {
+    // Creo una lista vacia
+    series = [];
+  } else {
+    // Descomprimo el TEXTO que tenia en storage en el array que necesito trabajar
+    series = JSON.parse(recuperoStorage);
+  }
+
+  var datos = new URLSearchParams(location.search);
+  var idfav = datos.get("idSeries");
+
+  if (series.includes(idfav)) {
+    document.querySelector(".fav-button").innerHTML = "QUITAR DE FAVORITOS";
+  }
+
+
+  //
+fetch("https://api.themoviedb.org/3/tv/" + idSeries + "?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(gif) {
+      document.querySelector("h1").innerHTML = gif.data.title;
+      document.querySelector("img").src = gif.data.images.original.url;
+    })
+  //
+    document.querySelector(".fav-button").onclick = function() {
+
+
+      //Paso 2: Modificar la informacion
+      // Si el gif ya era favorito
+      if (series.includes(idfav)) {
+        // Lo quito
+        var index = series.indexOf(idfav);
+        series.splice(index, 1);
+        document.querySelector(".fav-button").innerHTML = "AGREGAR FAVORITO";
+      } else {
+        //Lo agrego
+        series.push(idfav);
+        document.querySelector(".fav-button").innerHTML = "QUITAR DE FAVORITOS";
+      }
+
+
+      //Paso 3: Escribir en storage
+      var infoParaStorage = JSON.stringify(series);
+      localStorage.setItem("series", infoParaStorage);
+      console.log(localStorage);
 // fetch("https://api.themoviedb.org/3/tv/"+ idSeries +"/videos?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US
 // ")
 // .then(function(response) {
@@ -36,4 +94,5 @@ fetch("https://api.themoviedb.org/3/tv/" + idSeries + "?api_key=46aea19a7447a9c4
 // .then(function(trailerData) {
 //
 // })
+}
 }

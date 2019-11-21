@@ -72,7 +72,7 @@ var todoVacio = quieroGeneros == "vacio" && excluyoGeneros == "vacio" && orden =
       if (quieroGeneros == excluyoGeneros && quieroGeneros != "vacio" && excluyoGeneros !="vacio" ){
         alert ("No podes excluir y querer un mismo genero!")
       }else {
-        if (quieroGeneros == "vacio" && excluyoGeneros == "vacio" && orden != "vacio" && anio == "") {
+        // if (quieroGeneros == "vacio" && excluyoGeneros == "vacio" && orden != "vacio" && anio == "") {
 
 
 
@@ -113,9 +113,9 @@ var todoVacio = quieroGeneros == "vacio" && excluyoGeneros == "vacio" && orden =
 
         }
         })
-} else {
-  alert ("No tiene sentido buscar solo por orden!")
-}
+// } else {
+//   alert ("No tiene sentido buscar solo por orden!")
+// }
       }
       }
     }
