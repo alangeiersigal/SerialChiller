@@ -20,7 +20,8 @@ window.onload = function() {
       })
       .then(function(laSerie) {
         console.log(laSerie);
-      document.querySelector(".pelis").innerHTML += "<div class='imgcontainer'><a href='detalles.html?id=" + laSeries.results.id + "'><img src='http://image.tmdb.org/t/p/original"+ laSerie.results.poster_path + "'>";
+      document.querySelector(".pelis").innerHTML += "<div class='imgcontainer'><a href='detalles.html?id=" + laSerie.id + "'><img src='http://image.tmdb.org/t/p/original"+ laSerie.poster_path + "'>";
 //       })
-  }
+})
+}
 }
