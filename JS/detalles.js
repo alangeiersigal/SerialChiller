@@ -56,14 +56,24 @@ function abrirModal() {
 function cerrarModal() {
   modal.style.display = "none";
 }
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        modal.style.display = "none";
+    }
+};
 //empieza recomendaciones//
 
 fetch("https://api.themoviedb.org/3/tv/" + idSeries + "/recommendations?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US&page=1")
 .then(function(response) {
  return response.json()
 })
-.then(function(RecomData) {
- console.log(recomData);
+.then(function(recomdata) {
+ console.log(recomdata);
+ var recomContainer = document.querySelector(".recom-container")
+ var recomendacion = recomdata.results;
+ recomContainer.innerHTML = "<a class='recom-photo' href='detalles.html?id=" + recomdata.results[0].id + "'><img src='http://image.tmdb.org/t/p/original"+ recomdata.results[0].poster_path + "'>"
 })
 
 }

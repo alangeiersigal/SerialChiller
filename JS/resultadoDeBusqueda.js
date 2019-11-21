@@ -107,7 +107,7 @@ var todoVacio = quieroGeneros == "vacio" && excluyoGeneros == "vacio" && orden =
         console.log(data);
         var fotos = data.results
         for (var i = 0; i < fotos.length; i++) {
-          document.querySelector(".oculto").innerHTML += "<a href='resultadoDeBusqueda.html?genreid=" + data.results[i].id + "'><img src='http://image.tmdb.org/t/p/original" + data.results[i].poster_path + "'>";
+          document.querySelector(".oculto").innerHTML += "<a href='detalles.html?id=" + data.results[i].id + "'><img src='http://image.tmdb.org/t/p/original" + data.results[i].poster_path + "'>";
 
      document.querySelector(".oculto").style.display= "block";
 
