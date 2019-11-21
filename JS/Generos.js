@@ -24,7 +24,7 @@ window.onload = function() {
    var contenedorDeImagenes = document.querySelector(".pelis");
    var imagenesDePelis = data.results;
    for (var i = 0; i < imagenesDePelis.length; i++) {
-     contenedorDeImagenes.innerHTML += "<div class='imgcontainer'><a href='generos.html?genreid=" + data.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ data.results[i].poster_path + "'>"
+     contenedorDeImagenes.innerHTML += "<div class='imgcontainer'><a href='detalles.html?id=" + data.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ data.results[i].poster_path + "'>"
    }
 
  })
@@ -52,7 +52,7 @@ function detectarScroll() {
     var imagenesDePelis = resultados.results;
      var contenedorDeImagenes = document.querySelector(".pelis");
     for (var i = 0; i < imagenesDePelis.length; i++) {
-      contenedorDeImagenes.innerHTML += "<div class='imgcontainer'><a href='generos.html?genreid=" + resultados.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ resultados.results[i].poster_path + "'>"
+      contenedorDeImagenes.innerHTML += "<div class='imgcontainer'><a href='generos.html?id=" + resultados.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ resultados.results[i].poster_path + "'>"
     }
       window.onscroll = detectarScroll;
   })

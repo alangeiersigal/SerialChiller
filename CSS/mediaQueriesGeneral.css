@@ -1,0 +1,18 @@
+
+/* MOBILE */
+@media (max-width: 500px) {
+  nav del footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*tablet*/
+@media (min-width:501px) and (max-width: 800px) {
+  nav del footer {
+    display: flex;
+    flex-direction: row;
+  }
+  letras {
+    font-size: 1rem;
+  }
+}
