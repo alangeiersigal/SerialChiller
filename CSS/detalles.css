@@ -81,14 +81,18 @@ width: 15%;
   background-color: #4ecca3;
 
 }
+
 .recom-container {
 max-width: 500px;
 max-height: 400px;
 margin-left: 120px;
 background-color: white;
 box-shadow: 0 1px 5px rgba(0,0,0,2);
-border-radius: 5px;
-border: 2px solid #4ecca3;
+}
+.recom-container:hover {
+  border: 2px solid #4ecca3;
+  border-radius: 5px;
+
 }
 .recom-photo{
   width: 50%;

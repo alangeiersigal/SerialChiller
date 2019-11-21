@@ -25,7 +25,7 @@ fetch("https://api.themoviedb.org/3/tv/" + idSeries + "?api_key=46aea19a7447a9c4
   document.querySelector("b.generos").innerHTML = "Generos: "
   for (var i = 0; i < arrayDeGeneros.length; i++) {
 
-    document.querySelector("b.generos").innerHTML += "<a href='generos.html?idgenres='"+arrayDeGeneros[i].id+"&nameGenre="+arrayDeGeneros[i].name+">" + arrayDeGeneros[i].name + " " + '</a>';
+    document.querySelector("b.generos").innerHTML += "<a href='generos.html?idgenres="+arrayDeGeneros[i].id+"&nameGenre="+arrayDeGeneros[i].name+"'>" + arrayDeGeneros[i].name + " " + '</a>';
   }
 })
 
@@ -41,7 +41,6 @@ fetch("https://api.themoviedb.org/3/tv/"+ idSeries +"/videos?api_key=46aea19a744
   var videoKey = trailerData.results[0].key;
   document.querySelector(".modal-content").innerHTML = "<span class='close-button'>&times</span><iframe class='video' width='90%' height='90%' src='https://www.youtube.com/embed/" + videoKey + "' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen><iframe>"
   console.log("https://www.youtube.com/embed/" + videoKey);
-})
 var modal = document.querySelector(".modal");
 var modalButton = document.querySelector(".modal-button");
 var closeButton = document.querySelector(".close-button");
@@ -63,6 +62,7 @@ document.onkeydown = function(evt) {
         modal.style.display = "none";
     }
 };
+})
 //empieza recomendaciones//
 
 fetch("https://api.themoviedb.org/3/tv/" + idSeries + "/recommendations?api_key=46aea19a7447a9c4b1cd03a96834279e&language=en-US&page=1")
