@@ -17,29 +17,65 @@
   <title>Proyecto integrador</title>
 </head>
 <body>
-  <div class="contengotodo">
 <!-- empiezo el nav -->
-<nav>
-  <ul>
-    <li class="LOGO"><a href="#">LOGO</a></li>
-    <li class="INICIO"><a href="../HTML/INICIO.html">INICIO</a></li>
-    <div class="dropdown">
-      <a class="drop" href="../HTML/generos.html">SERIES</a>
-      <div class="dropdown-content">
+<div class="contengotodo">
+  <!-- Imagen de mobile -->
 
-      </div>
+  <!-- Nav de mobile -->
+  <div class="Estoesdemobile">
+<img src="../IMG/netflix.jpg" alt="">
+  </div>
+  <section class="navmobile">
+
+   <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push"><img src="../IMG/iconoo.png" alt=""></button>
+  <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+  <div class="uk-offcanvas-bar">
+
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      <ul>
+        <li class="INICIO"><a href="../HTML/INICIO.html">INICIO</a></li>
+        <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
+    <div class="input-group">
+        <input placeholder="Buscar" class="form-control form-text" type="text" size="50" maxlength="50" name="buscador" />
+        <span class="input-group-btn">
+            <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        </span>
     </div>
-    <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
-<div class="input-group">
-    <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" name="buscador" />
-    <span class="input-group-btn">
-        <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
-    </span>
-</div>
 </form>
 <li><a href="resultadoDeBusqueda.html"> BUSQUEDA AVANZADA </a></li>
-  </ul>
-</nav>
+<div class="uk-inline">
+  <button class="uk-button uk-button-default" type="button">GENEROS</button>
+  <div uk-dropdown class="dropdown-content"></div>
+</div>
+      </ul>
+
+  </div>
+</div>
+  </section>
+<!-- empiezo el nav de pc -->
+  <nav class="navpc">
+    <ul>
+      <li class="LOGO"><a href="#">LOGO</a></li>
+      <li class="INICIO"><a href="../HTML/INICIO.html">INICIO</a></li>
+      <li class="favoritos"><a href="../HTML/favs.html">FAVORITOS</a></li>
+      <div class="dropdown">
+        <a class="drop" href="#">GENEROS</a>
+        <div class="dropdown-content">
+
+        </div>
+      </div>
+      <li><a href="resultadoDeBusqueda.html"> BUSQUEDA AVANZADA </a></li>
+      <form class="form-search content-search navbar-form" action="busqueda.html" method="get">
+
+      <input placeholder="Buscar" class="form-control form-text" type="text" size="5" maxlength="128" name="buscador" />
+      <span class="input-group-btn">
+          <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+  </div>
+</form>
+    </ul>
+  </nav>
     <div class="contenedor-todo">
       <h1 style="width: 100%"></h1>
     <div class="contenedor-detalles" style="width: 80%">
