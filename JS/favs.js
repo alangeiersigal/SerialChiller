@@ -18,8 +18,9 @@ window.onload = function() {
       .then(function(response) {
         return response.json();
       })
-      .then(function(gif) {
-        document.querySelector("ul").innerHTML += "<li><h3><a href=detallegif.html?idGif=" + gif.data.id + ">" + gif.data.title + "</a></h3><img src=" + gif.data.images.original.url + "></li>";
+      .then(function(laSerie) {
+        console.log(laSerie);
+      document.querySelector(".pelis").innerHTML += "<div class='imgcontainer'><a href='detalles.html?id=" + laSeries.results.id + "'><img src='http://image.tmdb.org/t/p/original"+ laSerie.results.poster_path + "'>";
 //       })
   }
 }
