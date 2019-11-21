@@ -25,11 +25,11 @@ window.addEventListener("load", function() {
   var datos = new URLSearchParams(location.search);
   console.log(datos);
   var loBuscado = datos.get("buscador");
-  // console.log(loBuscado);
+  console.log(loBuscado);
 
   if (loBuscado != null) {
     if (loBuscado.length >= 3) {
-      fetch("https://api.themoviedb.org/3/search/movie?api_key=46aea19a7447a9c4b1cd03a96834279e&query="+ loBuscado +"&page=1&include_adult=true")
+      fetch("https://api.themoviedb.org/3/search/tv?api_key=46aea19a7447a9c4b1cd03a96834279e&query=" + loBuscado)
       .then(function(response) {
         return response.json();
       })
@@ -38,7 +38,7 @@ window.addEventListener("load", function() {
         var cambioElH1 = document.querySelector("h1")
         cambioElH1.innerHTML = "This are the results for " + loBuscado;
         for (var i = 0; i < fotos.length; i++) {
-          document.querySelector(".pelis").innerHTML += "<div class='imgcontainer'><a href='generos.html?genreid=" + respuesta.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ respuesta.results[i].poster_path + "'>"
+          document.querySelector(".pelis").innerHTML += "<div class='imgcontainer'><a href='detalles.html?id=" + respuesta.results[i].id + "'><img src='http://image.tmdb.org/t/p/original"+ respuesta.results[i].poster_path + "'>"
         }
       })
       // setTimeout(function(){ x.value = "2 seconds" }, 2000)
