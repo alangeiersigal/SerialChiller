@@ -40,7 +40,7 @@ h1 {
 }
 
 .fav-button {
-  margin: 5% 0 0 15%;
+  margin: 5% 0 0 10%;
   height: 30px;
   width: 220px;
   background-color: #4ecca3;
@@ -106,7 +106,7 @@ width: 15%;
   box-shadow: 0 1px 5px rgba(0,0,0,1);
 }
 .modal {
-  /* display:none; */
+  display:none;
   position: fixed;
   left: 0;
   z-index: 1;
