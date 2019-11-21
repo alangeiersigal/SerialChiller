@@ -1,6 +1,6 @@
 
 /* MOBILE */
-@media (max-width: 769px) {
+@media (max-width: 500px) {
    nav {
 display: none;
   }
@@ -47,19 +47,29 @@ display: none;
   background-color: black;
   width: 100%;
 }
-}
-nav del footer {
+
+  .footer-container {
     display: flex;
     flex-direction: column;
   }
+  .footer-nav {
+      font-size: 1pm;
+      display: flex;
+  }
+  .columnader {
+    display: none;
 }
-/*tablet*/
+}
+/*tablet
 @media (min-width:501px) and (max-width: 800px) {
-  nav del footer {
+ .footer-container {
     display: flex;
     flex-direction: row;
   }
-  letras {
-    font-size: 1rem;
+ .footer-nav {
+     font-size: 5px;
+     display: flex;
   }
+
 }
+*/
