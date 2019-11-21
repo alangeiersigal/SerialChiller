@@ -42,3 +42,8 @@ margin: 10px 15px 10px 15px;
   border:2px solid #4ecca3;
   border-radius: 5px;
 }
+.form-search {
+left: 40%;
+width: 30%;
+  position: relative;
+}
