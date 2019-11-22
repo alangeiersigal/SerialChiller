@@ -3,7 +3,7 @@
   font-family: 'Titillium Web', sans-serif;
 }
 body{
-  background-color: #071e3d;
+  background-color: #222831;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +21,7 @@ position: relative;
 }
 nav {
   display: flex;
-  background-color: #278ea5;
+  background-color: #393e46;
   position: relative;
   flex: wrap;
   opacity: 0.8;
@@ -44,14 +44,25 @@ nav ul li {
   width: 10%;
 }
 nav ul li a {
-  text-decoration: none;
+  text-decoration: non30
   flex-wrap:wrap;
   color: white;
   position: absolute;
 }
 nav ul li a:hover {
-  color: #071E3D;
+  color: #4ecca3;
   text-decoration: none;
+}
+
+.contengoderechos{
+  display: flex;
+
+}
+.logo {
+  width: 13%;
+  height: 120px;
+  position: absolute;
+
 }
 .search {
   margin-left: 30%;
@@ -117,7 +128,8 @@ nav ul li a:hover {
 }
 
 .dropdown a:hover {
-  color: red;
+  color: #4ecca3;
+  text-decoration: none;
 }
 /*termina menu de generos*/
 /*termina nav*/
@@ -217,7 +229,7 @@ bottom: 2%;
 /* Termina carrusel en emision */
 /* empiezo footer*/
 .footer-container { /*PONER Z-INDEX PARA Q SE VEA */
-  background-color: #278ea5;
+  background-color: #222831;
   width: 100%;
   top: 100%;
   border-radius: 5% 5% 0% 0%;
@@ -285,10 +297,14 @@ footer a:hover {
   margin-left: 15px;
 }
 .contengoderechos {
-display: flex;
+
 }
 .twitter {
   margin-left: 3px;
+}
+.logo{
+position:absolute;
+  left: 40%;
 }
 
 @media (max-width: 769px) {

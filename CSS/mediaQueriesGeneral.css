@@ -4,6 +4,9 @@
    nav {
 display: none;
   }
+  .logo {
+    display: none;
+  }
   .navmobile {
     display: block;
     width: 10%;

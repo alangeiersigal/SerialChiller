@@ -139,14 +139,14 @@ nav ul li a:hover {
 
 .populares h1 {
   color: white;
-  background-color: #071e3d;
+  background-color: #222831;
   font-size: 30px;
   margin-top: 1%;
   margin-bottom: 2%;
   z-index: 46;
 }
 .populares {
-  background-color:rgba(0, 0, 179, 0.3);
+  background-color:#222831;
 }
 .imagenespopu{
   display: flex;
@@ -163,13 +163,13 @@ nav ul li a:hover {
 /*empeiza carrusel recomendadi*/
 .recomendadas h1 {
   color: white;
-  background-color: #071e3d;
+  background-color: #222831;
   font-size: 30px;
   margin-top: 1%;
   margin-bottom: 2%;
 }
 .recomendadas {
-  background-color:rgba(0, 0, 179, 0.3);
+  background-color:#222831;
 }
 .imgrecomendadas{
   display: flex;
@@ -186,13 +186,13 @@ nav ul li a:hover {
 
 .emision h1 {
   color: white;
-  background-color: #071e3d;
+  background-color: #222831;
   font-size: 30px;
   margin-top: 1%;
   margin-bottom: 2%;
 }
 .emision {
-  background-color: rgba(0, 0, 179, 0.3);
+  background-color: #222831;
 
 }
 .imgemision{
@@ -204,7 +204,7 @@ nav ul li a:hover {
 /* Termina carrusel en emision */
 /* empiezo footer*/
 .footer-container { /*PONER Z-INDEX PARA Q SE VEA */
-  background-color: #278ea5;
+  background-color: #222831;
   width: 100%;
   top: 100%;
   border-radius: 5% 5% 0% 0%;
@@ -221,6 +221,7 @@ nav ul li a:hover {
   display: flex;
   flex: 2 1 auto;
   flex-flow: wrap;
+  background-color: #393e46;
 
 }
 
@@ -248,6 +249,7 @@ nav ul li a:hover {
 .columnader h5 {
   margin-bottom: 0;
   margin-top: inherit;
+  color: white;
 }
 .footer-p {
   margin-bottom: 0;

@@ -34,6 +34,7 @@ window.addEventListener("load", function() {
         return response.json();
       })
       .then(function(respuesta) {
+        // console.log(respuesta);
         var fotos = respuesta.results
         var cambioElH1 = document.querySelector("h1")
         cambioElH1.innerHTML = "This are the results for " + loBuscado;

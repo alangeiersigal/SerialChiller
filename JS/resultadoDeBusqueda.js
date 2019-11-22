@@ -110,7 +110,6 @@ var todoVacio = quieroGeneros == "vacio" && excluyoGeneros == "vacio" && orden =
           document.querySelector(".oculto").innerHTML += "<a href='detalles.html?id=" + data.results[i].id + "'><img src='http://image.tmdb.org/t/p/original" + data.results[i].poster_path + "'>";
 
      document.querySelector(".oculto").style.display= "block";
-
         }
         })
 // } else {
